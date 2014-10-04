@@ -1,0 +1,93 @@
+<html>
+<head>
+
+<title>boilr</title>
+
+<link rel="stylesheet" href="resources/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="resources/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="resources/boilr.css">
+
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">boilr</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul id="nav" class="nav navbar-nav navbar-right">
+            <li><a href="#what">What</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#social">Social</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li>
+          </ul> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container main">
+
+      <div class="jumbotron" id="what">
+        <h1>What</h1>
+        <p>What is this?!
+        </p>
+      </div>
+
+      <div class="jumbotron" id="tutorial">
+        <h1>Tutorial</h1>
+        <p>How does this work?!</p>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/NaiiJs2XO0M" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="jumbotron" id="download">
+        <h1>Download</h1>
+        <p>Dowload APK here, github there, also on F-droid and play store</p>
+      </div>
+
+      <div class="jumbotron" id="social">
+        <h1>Social</h1>
+        <p>Twitter, Facebook, Instrgram, SnapChat, youtube, and stuff</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="resources/jquery-1.11.1.min.js"></script>
+    <script src="resources/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="resources/bootstrap-3.2.0-dist/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="resources/jQuery-One-Page-Nav-3.0.0/jquery.nav.js"></script>
+
+
+<script>
+		//https://github.com/davist11/jQuery-One-Page-Nav
+		$(document).ready(function() {
+			$('#nav').onePageNav({
+				currentClass: 'active',
+				changeHash: true,
+				filter: ':not(.external)',
+				 scrollThreshold: 0.75
+			});
+		});
+	</script>
+
+
+  </body>
+</html>
