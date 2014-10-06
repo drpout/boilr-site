@@ -1,0 +1,17 @@
+div.main {
+    padding-top: 80px;
+}
+
+.jumbotron dl {
+	font-size: 21px;
+	font-weight: 200;
+}
+
+.jumbotron dt {
+	width: 50px;
+	text-align: left;
+}
+
+.jumbotron dd {
+	margin-left: 70px;
+}

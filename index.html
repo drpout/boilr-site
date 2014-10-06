@@ -3,100 +3,129 @@
 
 <title>Boilr - Price alarms for cryptocurrencies and bullion on Android</title>
 
-<link rel="stylesheet" href="resources/bootstrap-3.2.0-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="resources/boilr.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/boilr.css">
 
 </head>
 <body>
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Boilr</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul id="nav" class="nav navbar-nav navbar-right">
-            <li><a href="#what">What</a></li>
-            <li><a href="#tutorial">Tutorial</a></li>
-            <li><a href="#download">Download</a></li>
-            <li><a href="#social">Social</a></li>
-            <li><a href="#donate">Donate</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top</a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Boilr</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul id="nav" class="nav navbar-nav navbar-right">
+					<li><a href="#what">What</a></li>
+					<!--<li><a href="#inaction">In Action</a></li>-->
+					<li><a href="#download">Download</a></li>
+					<!--<li><a href="#social">Social</a></li>-->
+					<li><a href="#donate">Donate</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container main">
 
-    <div class="container main">
+		<div class="jumbotron" id="what">
+			<h1>What</h1>
+			<div class="row">
+				<div class="col-md-4">alarm firing</div>
+				<div class="col-md-8"><p>Boilr is an Android app which monitors cryptocurrencies and bullion prices and triggers alarms according to user rules.</p></div>
+			</div>
+			<p>Supports 2 types of alarms:</p>
+			<div class="row">
+				<div class="col-md-4">price hit configs</div>
+				<div class="col-md-8">
+					<p><strong>Price Hit</strong><br/>
+					Triggered when price crosses an upper or lower bound.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">price change configs</div>
+				<div class="col-md-8">
+					<p><strong>Price Change</strong><br/>
+					Triggered when price changes more than a given amount (in currency or percentage) in a specified time frame (e.g. 1 day).</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">sound an vibration configs</div>
+				<div class="col-md-8">
+					<p>Alarm sound and vibration are configurable globally and for each alarm in particular.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">exchanges list in search</div>
+				<div class="col-md-8">
+					<p>Lists of exchanges, pairs and alarms are fully searchable allowing a quick alarm setup and configuration.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">paris list</div>
+				<div class="col-md-8">
+					<p>Market data is retrieved directly from the exchanges using Wi-Fi or Mobile Data (if allowed). Boilr supports all the <a href="https://github.com/andrefbsantos/libdynticker/#supported-exchanges" target="_blank">exchanges available on libdynticker</a> with all their traded pairs.</p>
+				</div>
+			</div>
+		</div>
 
-      <div class="jumbotron" id="what">
-        <h1>What</h1>
-        <p>What is this?!
-        </p>
-      </div>
+		 <!--<div class="jumbotron" id="inaction">
+			<h1>In Action</h1>
+			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
+		</div>-->
+		
+		<div class="jumbotron" id="download">
+			<h1>Download and Fork</h1>
+			<p>Lastest version: <a href="https://github.com/andrefbsantos/boilr/releases/download/0.0.0/boilr-0.0.0.apk">boilr-0.0.0.apk</a></p>
+			<p>Boilr will be available shortly on F-Droid and later on Google Play in a donate version.</p>
+			<p>You can get the source-code and fork it in <a href="https://github.com/andrefbsantos/boilr" target="_blank">Boilr's GitHub</a>.</p>
+		</div>
 
-      <div class="jumbotron" id="tutorial">
-        <h1>Tutorial</h1>
-        <p>How does this work?!</p>
-        <iframe width="560" height="315" src="//www.youtube.com/embed/NaiiJs2XO0M" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="jumbotron" id="download">
-        <h1>Download and Fork</h1>
-        <p>Dowload APK here, github there, also on F-droid and play store</p>
-      </div>
+		<!-- <div class="jumbotron" id="social">
+			<h1>Social</h1>
+			<p>Twitter, Bitcointalk, Youtube, Reddit, TradingView</p>
+		</div> -->
 
-      <div class="jumbotron" id="social">
-        <h1>Social</h1>
-        <p>Twitter, Facebook, Instagram, SnapChat, youtube, and stuff</p>
-      </div>
-      
-	  <div class="jumbotron" id="donate">
-        <h1>Donate or Tip</h1>
-        <p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>. If it is useful for you please consider making a donation or sending a tip. You can buy the donate version on Google Play, or better send some cryptocurrency directly to us:</p>
-        <p>BTC: <a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a></p>
-        <img src="img/boilr-donations-btc.png"/>
-        <p>XMR: 43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</p>
-      </div>
+		<div class="jumbotron" id="donate">
+			<h1>Donate or Tip</h1>
+			<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>.
+				If it is useful for you please consider making a donation or sending a tip.
+				You can buy the donate version on Google Play, or better, send some cryptocurrency directly to us:</p>
+			<dl class="dl-horizontal" style='word-break: break-all;'>
+				<dt>BTC</dt>
+				<dd><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx<br/>
+				<img src="img/boilr-donations-btc.png" /></a></dd>
+				<dt>XMR</dt>
+				<dd>43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</dd>
+			</dl>
+		</div>
 
-    </div> <!-- /container -->
+	</div>
 
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/jquery.nav.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="resources/jquery-1.11.1.min.js"></script>
-    <script src="resources/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="resources/bootstrap-3.2.0-dist/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="resources/jQuery-One-Page-Nav-3.0.0/jquery.nav.js"></script>
-
-
-<script>
+	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
 			$('#nav').onePageNav({
-				currentClass: 'active',
-				changeHash: true,
-				filter: ':not(.external)',
-				 scrollThreshold: 0.75
+				currentClass : 'active',
+				changeHash : true,
+				filter : ':not(.external)',
+				scrollThreshold : 0.1
 			});
 		});
 	</script>
 
-
-  </body>
+</body>
 </html>
