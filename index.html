@@ -19,8 +19,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Boilr</a>
-				<img src="img/boilr-icon.png" />
+				<a class="navbar-brand" href="#"><img src="img/boilr-icon.png" /></a>
+				
+					
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav navbar-right">
@@ -86,6 +87,7 @@
 			<p>Lastest version: <a href="https://github.com/andrefbsantos/boilr/releases/download/0.0.0/boilr-0.0.0.apk">boilr-0.0.0.apk</a></p>
 			<p>Boilr will be available shortly on F-Droid and later on Google Play in a donate version.</p>
 			<p>You can get the source-code and fork at <a href="https://github.com/andrefbsantos/boilr" target="_blank">Boilr's GitHub</a>.</p>
+			<a id="download-link" href="#" class="btn btn-default btn-lg"> I don't work without javascript enabled.</a>
 		</div>
 
 		<!-- <div class="jumbotron" id="social">
@@ -106,7 +108,6 @@
 				<dd>43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</dd>
 			</dl>
 		</div>
-
 	</div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
@@ -115,7 +116,7 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/jquery.nav.js"></script>
-
+"/home/andre/Desktop/boilr-site/index.html"
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
@@ -125,6 +126,24 @@
 				filter : ':not(.external)',
 				scrollThreshold : 0.1
 			});
+			
+			//Just place the id download-link to a <a> and it will add the link and replace the ext.
+			(function() {
+				$.ajax({
+					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
+				}).done(function(data) {
+					console.log(data);
+					if (data.length > 0) {
+						var name = data[0].assets[0].name;
+						var url = data[0].assets[0].browser_download_url;
+						$('#download-link').text(name);
+						$('#download-link').attr('href', url);
+					} else {
+						//TODO there is something wrong with the api, do something notice user?
+					}
+				});
+			})();
+			
 		});
 	</script>
 
