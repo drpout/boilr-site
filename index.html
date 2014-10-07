@@ -18,8 +18,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Boilr</a>
-				<img src="img/boilr-icon.png" width="27px"/>
+				<a class="navbar-brand" href="#"><img src="img/boilr-icon.png" /></a>
+				
+					
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav navbar-right">
@@ -146,7 +147,8 @@
 				$.ajax({
 					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
 				}).done(function(data) {
-					if (data.lenght > 0) {
+					console.log(data);
+					if (data.length > 0) {
 						var name = data[0].assets[0].name;
 						var url = data[0].assets[0].browser_download_url;
 						$('#download-link').text(name);
