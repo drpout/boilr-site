@@ -2,6 +2,24 @@ div.main {
     padding-top: 80px;
 }
 
+.navbar-header img {
+	height: auto;
+	max-height: 50px;
+	max-width: none;
+	width: auto;
+}
+
+.jumbotron img {
+	height: auto;
+	max-height: none;
+	max-width: 100%;
+	width: auto;
+}
+
+.row div {
+	padding-bottom: 2em;
+}
+
 .jumbotron dl {
 	font-size: 21px;
 	font-weight: 200;
