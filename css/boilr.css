@@ -42,9 +42,15 @@ div.main {
 }
 
 @media(min-width:992px){
+	.row p {
+		font-size: 18px;
+	}
 }
 
 @media(min-width:1200px){
+	.row p {
+		font-size: 18px;
+	}
 }
 
 .jumbotron dt {
