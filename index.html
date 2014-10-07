@@ -19,7 +19,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">Boilr</a>
-				<img src="img/boilr-icon.png" />
+				<img src="img/boilr-icon.png" width="27px"/>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav navbar-right">
@@ -141,6 +141,7 @@
 				scrollThreshold : 0.1
 			});
 			
+			//Just place the id download-link to a <a> and it will add the link and replace the ext.
 			(function() {
 				$.ajax({
 					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
