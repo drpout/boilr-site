@@ -36,6 +36,9 @@ div.main {
 }
 
 @media(min-width:768px){
+	.row p {
+		font-size: 30px;
+	}
 }
 
 @media(min-width:992px){
