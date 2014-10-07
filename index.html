@@ -86,7 +86,12 @@
 			<p>Lastest version: <a id="download-link" href="#" class="btn btn-default btn-lg"> I don't work without javascript enabled.</a></p>
 			<p>Boilr will be available shortly on F-Droid and later on Google Play in a donate version.</p>
 			<p>You can get the source-code and fork at <a href="https://github.com/andrefbsantos/boilr" target="_blank">Boilr's GitHub</a>.</p>
+			
+			
+			<div id="qrcode"></div>
 		</div>
+		
+		<div id="qrcode"></div>
 
 		<!-- <div class="jumbotron" id="social">
 			<h1>Social</h1>
@@ -114,6 +119,7 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/jquery.nav.js"></script>
+	<script src="js/qrcode.min.js"></script>
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
@@ -123,6 +129,7 @@
 				filter : ':not(.external)',
 				scrollThreshold : 0.1
 			});
+			
 			
 			//Just place the id download-link to a <a> and it will add the link and replace the ext.
 			(function() {
@@ -135,12 +142,13 @@
 						var url = data[0].assets[0].browser_download_url;
 						$('#download-link').text(name);
 						$('#download-link').attr('href', url);
+						var qrcode = new QRCode("qrcode");
+						qrcode.makeCode(url);
 					} else {
 						//TODO there is something wrong with the api, do something notice user?
 					}
 				});
-			})();
-			
+			})();			
 		});
 	</script>
 
