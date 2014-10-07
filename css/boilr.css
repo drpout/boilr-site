@@ -31,13 +31,13 @@ div.main {
 
 @media(max-width:767px){
 	.row p {
-		font-size: 30px;
+		font-size: 40px;
 	}
 }
 
 @media(min-width:768px){
 	.row p {
-		font-size: 30px;
+		font-size: 40px;
 	}
 }
 
