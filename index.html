@@ -80,17 +80,47 @@
 			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 		</div>-->
 		
-		<div class="jumbotron" id="download">
+		<div class="jumbotron row" id="download">
 			<h1>Download and Fork</h1>
-			<p>Lastest version: 
-				<a id="download-link" href="#" class="btn btn-default btn-lg"> Please enable JavaScript to see the download link.</a>
-				<div id="qrcode"></div>
-			</p>
-			<p>Boilr will be available shortly on F-Droid and later on Google Play in a donate version.</p>
-			<p>You can get the source-code and fork at <a href="https://github.com/andrefbsantos/boilr" target="_blank">Boilr's GitHub</a>.</p>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-fdroid.png"
+					height="85">
+				<h2 class="text-center">F-Droid</h2>
+				<p class="text-center sub-title">(Preferred)</p>
+				<p class="text-center">
+					<a href="fdroid.app:mobi.boilr.boilr" class="btn btn-default sharp">DOWNLOAD</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-apk.png"
+					height="85px">
+				<h2 class="text-center">APK</h2>
+				<p class="text-center sub-title" style="color: transparent;">P</p>
+				<p class="text-center">
+					<a id="download-link" href="" class="btn btn-default sharp">DOWNLOAD</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-googleplay.png"
+					height="85">
+				<h2 class="text-center">Google Play store</h2>
+				<p class="text-center sub-title">(Donate)</p>
+				<p class="text-center">
+					<a href="" class="btn btn-default sharp disabled">SOON</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img src="img/icon-github.png" class="center-block">
+				<h2 class="text-center">SourceCode</h2>
+				<p class="text-center sub-title" style="color: transparent;">P</p>
+				<p class="text-center">
+					<a href="https://github.com/andrefbsantos/boilr"
+						class="btn btn-default sharp">GitHub</a>
+				</p>
+			</div>
 		</div>
 		
-		<div id="qrcode"></div>
+<!-- 		<div id="qrcode"></div> -->
 
 		<!-- <div class="jumbotron" id="social">
 			<h1>Social</h1>
@@ -102,6 +132,7 @@
 			<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>.
 				If useful, consider making a donation or sending a tip.
 				You can buy the donate version on Google Play, or donate/tip us directly:</p>
+								
 			<dl class="dl-horizontal" style='word-break: break-all;'>
 				<dt>BTC</dt>
 				<dd><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx<br/>
@@ -139,10 +170,16 @@
 					if (data.length > 0) {
 						var name = data[0].assets[0].name;
 						var url = data[0].assets[0].browser_download_url;
-						$('#download-link').text(name);
+						//$('#download-link').text(name);
 						$('#download-link').attr('href', url);
 						var qrcode = new QRCode("qrcode");
 						qrcode.makeCode(url);
+						
+						//qrcode = new QRCode('fdroid');
+						//qrcode.makeCode("fdroid.app:mobi.boilr.boilr");
+						//qrcode.makeCode("market://details?id=la.droid.qr");
+						
+						
 					} else {
 						//TODO there is something wrong with the api, do something notice user?
 					}

@@ -76,3 +76,15 @@ div.main {
 .jumbotron dd {
 	margin-left: 70px;
 }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sharp {
+	border-radius: 0;
+/* 	background-color: #ecf0f1 !important; */
+/*     color: #2d525d; */
+}
