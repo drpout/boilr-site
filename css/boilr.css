@@ -36,9 +36,12 @@ div.main {
 	.jumbotron h1 {
 	   	font-size: 34px;
 	}
+	.jumbotron h2 {
+	   	font-size: 30px;
+	}
 }
 
-@media(max-width:380px){
+/*@media(max-width:380px){
 	.jumbotron dl, .jumbotron p {
 		font-size: 12px;
 	}
@@ -46,6 +49,7 @@ div.main {
 	   	font-size: 30px;
 	}
 }
+*/
 
 @media(max-width:380px){
 	.jumbotron dl, .jumbotron p {
@@ -53,6 +57,9 @@ div.main {
 	}
 	.jumbotron h1 {
 	   	font-size: 28px;
+	}
+	.jumbotron h2 {
+	   	font-size: 24px;
 	}
 }
 
