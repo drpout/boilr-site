@@ -26,31 +26,46 @@ div.main {
 }
 
 .jumbotron dl, .jumbotron p {
-	font-size: 18px;
+	font-size: 17px;
+}
+
+@media(max-width:440px){
+	.jumbotron dl, .jumbotron p {
+		font-size: 15px;
+	}
+	.jumbotron h1 {
+	   	font-size: 34px;
+	}
+}
+
+@media(max-width:380px){
+	.jumbotron dl, .jumbotron p {
+		font-size: 12px;
+	}
+	.jumbotron h1 {
+	   	font-size: 30px;
+	}
+}
+
+@media(max-width:380px){
+	.jumbotron dl, .jumbotron p {
+		font-size: 11px;
+	}
+	.jumbotron h1 {
+	   	font-size: 28px;
+	}
 }
 
 @media(max-width:767px){
-	.row p {
-		font-size: 40px;
-	}
 }
 
 @media(min-width:768px){
-	.row p {
-		font-size: 40px;
-	}
 }
 
 @media(min-width:992px){
-	.row p {
-		font-size: 18px;
-	}
 }
 
 @media(min-width:1200px){
-	.row p {
-		font-size: 18px;
-	}
 }
 
 .jumbotron dt {
