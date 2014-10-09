@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
 
 <title>Boilr - Cryptocurrency and bullion price alarms for Android</title>
 
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/boilr.css"/>
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 
 </head>
@@ -22,7 +25,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">Boilr</a>
-				<img src="img/boilr-icon.png" />
+				<img src="img/icon-boilr.png" />
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav navbar-right">
@@ -104,8 +107,9 @@
 				You can buy the donate version on Google Play, or donate/tip us directly:</p>
 			<dl class="dl-horizontal" style='word-break: break-all;'>
 				<dt>BTC</dt>
-				<dd><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx<br/>
-				<img src="img/boilr-donations-btc.png" /></a></dd>
+				<dd><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a>
+					(<a href="img/donations-btc.png" rel="lightbox" title="Boilr BTC donation address">QR Code</a>)
+				</dd>
 				<dt>XMR</dt>
 				<dd>43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</dd>
 			</dl>
@@ -119,6 +123,7 @@
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/qrcode.min.js"></script>
+	<script src="js/slimbox2.min.js"></script>
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
@@ -147,7 +152,7 @@
 						//TODO there is something wrong with the api, do something notice user?
 					}
 				});
-			})();			
+			})();
 		});
 	</script>
 
