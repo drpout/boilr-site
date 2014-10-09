@@ -83,17 +83,45 @@
 			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 		</div>-->
 		
-		<div class="jumbotron" id="download">
+		<div class="jumbotron row" id="download">
 			<h1>Download and Fork</h1>
-			<p>Lastest version: 
-				<a id="download-link" href="#" class="btn btn-default btn-lg"> Please enable JavaScript to see the download link.</a>
-				<div id="qrcode"></div>
-			</p>
-			<p>Boilr will be available shortly on F-Droid and later on Google Play in a donate version.</p>
-			<p>You can get the source-code and fork at <a href="https://github.com/andrefbsantos/boilr" target="_blank">Boilr's GitHub</a>.</p>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-fdroid.png">
+				<h2 class="text-center">F-Droid</h2>
+				<p class="text-center sub-title">(Preferred)</p>
+				<p class="text-center">
+					<a href="fdroid.app:mobi.boilr.boilr" class="btn btn-default sharp">DOWNLOAD</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-apk.png">
+				<h2 class="text-center">APK</h2>
+				<!-- <div id="apk-qrcode"></div> -->
+				<p class="text-center sub-title">(<a id="apk-qrcode-link">QR Code</a>)</p>
+				<p class="text-center">
+					<a id="apk-link" href="" class="btn btn-default sharp">DOWNLOAD</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-googleplay.png">
+				<h2 class="text-center">Google Play</h2>
+				<p class="text-center sub-title">(Donate)</p>
+				<p class="text-center">
+					<a href="" class="btn btn-default sharp disabled">SOON</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img src="img/icon-github.png" class="image-clip center-block">
+				<h2 class="text-center">Source Code</h2>
+				<p class="text-center sub-title" style="color: transparent;">P</p>
+				<p class="text-center">
+					<a href="https://github.com/andrefbsantos/boilr" target="_blank"
+						class="btn btn-default sharp">GitHub</a>
+				</p>
+			</div>
 		</div>
 		
-		<div id="qrcode"></div>
+<!-- 		<div id="qrcode"></div> -->
 
 		<!-- <div class="jumbotron" id="social">
 			<h1>Social</h1>
@@ -105,14 +133,32 @@
 			<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>.
 				If useful, consider making a donation or sending a tip.
 				You can buy the donate version on Google Play, or donate/tip us directly:</p>
-			<dl class="dl-horizontal" style='word-break: break-all;'>
-				<dt>BTC</dt>
-				<dd><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a>
-					(<a href="img/donations-btc.png" rel="lightbox" title="Boilr BTC donation address">QR Code</a>)
-				</dd>
-				<dt>XMR</dt>
-				<dd>43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</dd>
-			</dl>
+			<div style='word-break: break-all;'>
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-bitcoin.png">
+					<h2 class="text-center">Bitcoin</h2>
+					<p class="text-center sub-title"><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a><br/>
+						(<a href="img/donations-btc.png" rel="lightbox" title="Boilr BTC donation address">QR Code</a>)
+					</p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-monero.png">
+					<h2 class="text-center">Monero</h2>
+					<p class="text-center sub-title">43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-dogecoin.png">
+					<h2 class="text-center">Dogecoin</h2>
+					<p class="text-center sub-title"><a href="dogecoin:DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg">DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg</a><br/>
+						(<a href="img/donations-doge.png" rel="lightbox" title="Boilr DOGE donation address">QR Code</a>)
+					</p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-nextcoin.png">
+					<h2 class="text-center">Nextcoin</h2>
+					<p class="text-center sub-title">N..............</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -140,14 +186,21 @@
 				$.ajax({
 					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
 				}).done(function(data) {
-					console.log(data);
+					//console.log(data);
 					if (data.length > 0) {
-						var name = data[0].assets[0].name;
+						//var name = data[0].assets[0].name;
 						var url = data[0].assets[0].browser_download_url;
-						$('#download-link').text(name);
-						$('#download-link').attr('href', url);
-						var qrcode = new QRCode("qrcode");
+						$('#apk-link').attr('href', url);
+						/*var qrcode = new QRCode("apk-qrcode");
 						qrcode.makeCode(url);
+						var imageURL = QRCode._elCanvas.toDataURL("image/png");
+						$('#apk-qrcode-link').click(function(e) {
+					          $.slimbox([
+					            [imageURL, "APK download link"]], 
+					            0, 
+					            {loop: true});
+					          e.preventDefault();
+					        });*/
 					} else {
 						//TODO there is something wrong with the api, do something notice user?
 					}

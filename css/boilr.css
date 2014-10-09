@@ -36,13 +36,7 @@ div.main {
 	.jumbotron h1 {
 	   	font-size: 34px;
 	}
-}
-
-@media(max-width:380px){
-	.jumbotron dl, .jumbotron p, .jumbotron a {
-		font-size: 12px;
-	}
-	.jumbotron h1 {
+	.jumbotron h2 {
 	   	font-size: 30px;
 	}
 }
@@ -53,6 +47,9 @@ div.main {
 	}
 	.jumbotron h1 {
 	   	font-size: 28px;
+	}
+	.jumbotron h2 {
+	   	font-size: 24px;
 	}
 }
 
@@ -75,4 +72,16 @@ div.main {
 
 .jumbotron dd {
 	margin-left: 70px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sharp {
+	border-radius: 0;
+/* 	background-color: #ecf0f1 !important; */*
+/     color: #2d525d; */
 }
