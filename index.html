@@ -9,8 +9,8 @@
 
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
-<link rel="stylesheet" type="text/css" href="css/boilr.css"/>
-<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/boilr.css"/>
+<link rel="stylesheet" href="css/colorbox.css"/>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 
 </head>
@@ -95,11 +95,11 @@
 			</div>
 			<div class="col-sm-3 col-xs-6">
 				<img class="image-clip center-block" src="img/icon-apk.png">
-				<h2 class="text-center">APK</h2>
-				<!-- <div id="apk-qrcode"></div> -->
-				<p class="text-center sub-title">(<a id="apk-qrcode-link">QR Code</a>)</p>
+				<h2 id="text-apk" class="text-center">APK</h2>
+				<div id="qr-apk" class="hidden"></div>
+				<p class="text-center sub-title">(<a id="qr-apk-link">Please enable JavaScript</a>)</p>
 				<p class="text-center">
-					<a id="apk-link" href="" class="btn btn-default sharp">DOWNLOAD</a>
+					<a id="apk-link" href="" class="btn btn-default sharp disabled">DOWNLOAD</a>
 				</p>
 			</div>
 			<div class="col-sm-3 col-xs-6">
@@ -138,7 +138,7 @@
 					<img class="image-clip center-block" src="img/icon-bitcoin.png">
 					<h2 class="text-center">Bitcoin</h2>
 					<p class="text-center sub-title"><a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a><br/>
-						(<a href="img/donations-btc.png" rel="lightbox" title="Boilr BTC donation address">QR Code</a>)
+						(<a id="qr-donation-btc" href="img/donations-btc.png">QR Code</a>)
 					</p>
 				</div>
 				<div class="col-sm-3 col-xs-6">
@@ -150,16 +150,25 @@
 					<img class="image-clip center-block" src="img/icon-dogecoin.png">
 					<h2 class="text-center">Dogecoin</h2>
 					<p class="text-center sub-title"><a href="dogecoin:DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg">DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg</a><br/>
-						(<a href="img/donations-doge.png" rel="lightbox" title="Boilr DOGE donation address">QR Code</a>)
+						(<a id="qr-donation-doge" href="img/donations-doge.png">QR Code</a>)
 					</p>
 				</div>
 				<div class="col-sm-3 col-xs-6">
 					<img class="image-clip center-block" src="img/icon-nextcoin.png">
 					<h2 class="text-center">Nextcoin</h2>
-					<p class="text-center sub-title">N..............</p>
+					<p class="text-center sub-title">NXT-PMQL-5RXJ-QE46-2L4SQ</p>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="panel-footer">
+		<p>Original F-Droid logo by William Theaker and Robert Martinez.
+			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.<br/>
+			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Santos</a> and <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+			Boilr icon by <a href="http://cargocollective.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
+			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
+		</p>
 	</div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
@@ -169,10 +178,12 @@
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/qrcode.min.js"></script>
-	<script src="js/slimbox2.min.js"></script>
+	<script src="js/colorbox.min.js"></script>
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
+			var qrApkLink = $('#qr-apk-link');
+			
 			$('#nav').onePageNav({
 				currentClass : 'active',
 				changeHash : true,
@@ -180,34 +191,36 @@
 				scrollThreshold : 0.1
 			});
 			
+			$('#qr-donation-btc').colorbox({href:'img/donations-btc.png', title:'Boilr BTC donation address'});
+			$('#qr-donation-doge').colorbox({href:'img/donations-doge.png', title:'Boilr DOGE donation address'});
 			
-			//Just place the id download-link to a <a> and it will add the link and replace the ext.
 			(function() {
 				$.ajax({
 					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
 				}).done(function(data) {
 					//console.log(data);
 					if (data.length > 0) {
-						//var name = data[0].assets[0].name;
+						var version = data[0].tag_name;
 						var url = data[0].assets[0].browser_download_url;
-						$('#apk-link').attr('href', url);
-						/*var qrcode = new QRCode("apk-qrcode");
+						var apkLink = $('#apk-link'); 
+						apkLink.attr('href', url);
+						apkLink.removeClass('disabled');
+						var textApk = $('#text-apk');
+						textApk.text(textApk.text() + ' v' + version);
+						var qrcode = new QRCode('qr-apk');
 						qrcode.makeCode(url);
-						var imageURL = QRCode._elCanvas.toDataURL("image/png");
-						$('#apk-qrcode-link').click(function(e) {
-					          $.slimbox([
-					            [imageURL, "APK download link"]], 
-					            0, 
-					            {loop: true});
-					          e.preventDefault();
-					        });*/
+						qrApkLink.text('QR Code');
+						qrApkLink.attr('href', 'javascript:void(0);');
+						qrApkLink.colorbox({inline:true, href:$('#qr-apk img'), title:'APK v' + version + ' download link'});
 					} else {
-						//TODO there is something wrong with the api, do something notice user?
+						qrApkLink.text('Error: cannot connect to GitHub');
 					}
+				})
+				.fail(function() {
+					qrApkLink.text('Error: cannot connect to GitHub');
 				});
 			})();
 		});
 	</script>
-
 </body>
 </html>
