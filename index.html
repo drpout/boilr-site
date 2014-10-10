@@ -24,8 +24,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Boilr</a>
-				<img src="img/icon-boilr.png" />
+				<div class="navbar-inner">
+					<a class="navbar-brand" href="#">Boilr</a>
+					<img src="img/icon-boilr.png" />
+				</div>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav navbar-right">
@@ -121,8 +123,6 @@
 			</div>
 		</div>
 		
-<!-- 		<div id="qrcode"></div> -->
-
 		<!-- <div class="jumbotron" id="social">
 			<h1>Social</h1>
 			<p>Twitter, Bitcointalk, Youtube, Reddit, TradingView</p>
@@ -133,7 +133,7 @@
 			<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>.
 				If useful, consider making a donation or sending a tip.
 				You can buy the donate version on Google Play, or donate/tip us directly:</p>
-			<div style='word-break: break-all;'>
+			<div style='word-break: break-all;' class="row">
 				<div class="col-sm-3 col-xs-6">
 					<img class="image-clip center-block" src="img/icon-bitcoin.png">
 					<h2 class="text-center">Bitcoin</h2>
@@ -176,7 +176,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	<script src="js/jquery.nav.js"></script>
+	<script src="js/jquery.nav.min.js"></script>
 	<script src="js/qrcode.min.js"></script>
 	<script src="js/colorbox.min.js"></script>
 	<script>
@@ -188,7 +188,7 @@
 				currentClass : 'active',
 				changeHash : true,
 				filter : ':not(.external)',
-				scrollThreshold : 0.1
+				scrollThreshold : 0.5
 			});
 			
 			$('#qr-donation-btc').colorbox({href:'img/donations-btc.png', title:'Boilr BTC donation address'});
