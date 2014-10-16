@@ -95,7 +95,8 @@
 				<h2 class="text-center">F-Droid</h2>
 				<p class="text-center sub-title">(Preferred)</p>
 				<p class="text-center">
-					<a href="fdroid.app:mobi.boilr.boilr" class="btn btn-default sharp">DOWNLOAD</a>
+					<a id="fdroid-link" href="https://f-droid.org/repository/browse/?fdid=mobi.boilr.boilr"
+						target="_blank" class="btn btn-default sharp">DOWNLOAD</a>
 				</p>
 			</div>
 			<div class="col-sm-3 col-xs-6">
@@ -112,7 +113,8 @@
 				<h2 class="text-center">Google Play</h2>
 				<p class="text-center sub-title">(Donate)</p>
 				<p class="text-center">
-					<a href="" class="btn btn-default sharp disabled">SOON</a>
+					<a id="play-link" href="https://play.google.com/store/apps/details?id=mobi.boilr.boilr"
+						target="_blank" class="btn btn-default sharp">DOWNLOAD</a>
 				</p>
 			</div>
 			<div class="col-sm-3 col-xs-6">
@@ -186,8 +188,6 @@
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document).ready(function() {
-			var qrApkLink = $('#qr-apk-link');
-			
 			$('#nav').onePageNav({
 				currentClass : 'active',
 				changeHash : true,
@@ -198,6 +198,13 @@
 			$('#qr-donation-btc').colorbox({href:'img/donations-btc.png', title:'Boilr BTC donation address'});
 			$('#qr-donation-doge').colorbox({href:'img/donations-doge.png', title:'Boilr DOGE donation address'});
 			
+			var ua = navigator.userAgent.toLowerCase();
+			if(ua.indexOf("android") > -1) {
+				$('#fdroid-link').attr('href', 'fdroid.app:mobi.boilr.boilr');
+				$('#play-link').attr('href', 'market://details?id=mobi.boilr.boilr');
+			}
+			
+			var qrApkLink = $('#qr-apk-link');
 			(function() {
 				$.ajax({
 					url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
