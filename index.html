@@ -34,8 +34,8 @@
 					<li><a href="#what">What</a></li>
 					<!--<li><a href="#inaction">In Action</a></li>-->
 					<li><a href="#download">Download</a></li>
-					<!--<li><a href="#social">Social</a></li>-->
 					<li><a href="#donate">Donate</a></li>
+					<li><a href="#social">Social</a></li>
 				</ul>
 			</div>
 		</div>
@@ -128,11 +128,6 @@
 			</div>
 		</div>
 		
-		<!-- <div class="jumbotron" id="social">
-			<h1>Social</h1>
-			<p>Twitter, Bitcointalk, Youtube, Reddit, TradingView</p>
-		</div> -->
-
 		<div class="jumbotron" id="donate">
 			<h1>Donate or Tip</h1>
 			<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>.
@@ -165,11 +160,27 @@
 				</div>
 			</div>
 		</div>
+		<div class="jumbotron" id="social">
+			<h1>Social</h1>
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-envelope.png">
+					<h2 class="text-center">Email</h2>
+					<p class="text-center sub-title"><a id="email-link" href="javascript:void(0);">Please enable JavaScript</a></p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<img class="image-clip center-block" src="img/icon-twitter.png">
+					<h2 class="text-center">Twitter</h2>
+					<p class="text-center sub-title"><a href="https://twitter.com/boilrapp" target="_blank">@boilrapp</a></p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="panel-footer">
 		<p>Original F-Droid logo by William Theaker and Robert Martinez.
-			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.<br/>
+			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
+			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.<br/>
 			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Santos</a> and <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
 			Boilr icon by <a href="http://cargocollective.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
 			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.<br />
@@ -203,6 +214,11 @@
 				$('#fdroid-link').attr('href', 'fdroid.app:mobi.boilr.boilr');
 				$('#play-link').attr('href', 'market://details?id=mobi.boilr.boilr');
 			}
+			
+			var tsoh = 'openmailbox.org';
+			var liame = 'boilr@' + tsoh;
+			$('#email-link').attr('href', 'mail' + 'to:' + liame);
+			$('#email-link').text(liame);
 			
 			var qrApkLink = $('#qr-apk-link');
 			(function() {
