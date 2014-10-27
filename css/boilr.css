@@ -93,4 +93,17 @@ div.main {
 .sharp {
 	border-radius: 0;
 	background-image: none;
+	border: 0;
 }
+
+
+.small-img img {
+	height: auto;
+	width: 128px;
+}
+
+.jumbotron{
+	 #border: 4px;
+    border-radius: 15px;
+}	
+
