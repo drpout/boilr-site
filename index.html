@@ -380,7 +380,9 @@
 								filter : ':not(.external)',
 								scrollThreshold : 0.5,
 								scrollChange: function (nav){
+									console.log("aaa");
 									if($(nav).find('a').attr('href') ==='#video-wrap'){
+										console.log("asdasd");
 										$('#nav').addClass('transparent');										
 									}else{
 										$('#nav').removeClass('transparent');
