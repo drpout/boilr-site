@@ -1,5 +1,5 @@
 div.main {
-    padding-top: 80px;
+/* 	padding-top: 80px; */
 }
 
 .navbar-header img {
@@ -21,8 +21,8 @@ div.main {
 }
 
 .jumbotron h1 {
-   	font-size: 40px;
-   	font-weight: bold
+	font-size: 40px;
+	font-weight: bold
 }
 
 .jumbotron dl, .jumbotron p, .jumbotron a {
@@ -30,49 +30,49 @@ div.main {
 }
 
 .panel-footer p {
-   	font-size: 12px;
+	font-size: 12px;
 }
 
-@media(max-width:440px){
+@media ( max-width :440px) {
 	.jumbotron dl, .jumbotron p, .jumbotron a {
 		font-size: 15px;
 	}
 	.jumbotron h1 {
-	   	font-size: 34px;
+		font-size: 34px;
 	}
 	.jumbotron h2 {
-	   	font-size: 30px;
+		font-size: 30px;
 	}
 	.panel-footer p {
-   		font-size: 11px;
+		font-size: 11px;
 	}
 }
 
-@media(max-width:380px){
+@media ( max-width :380px) {
 	.jumbotron dl, .jumbotron p, .jumbotron a {
 		font-size: 11px;
 	}
 	.jumbotron h1 {
-	   	font-size: 28px;
+		font-size: 28px;
 	}
 	.jumbotron h2 {
-	   	font-size: 24px;
+		font-size: 24px;
 	}
 	.panel-footer p {
-   		font-size: 10px;
+		font-size: 10px;
 	}
 }
 
-@media(max-width:767px){
+@media ( max-width :767px) {
 }
 
-@media(min-width:768px){
+@media ( min-width :768px) {
 }
 
-@media(min-width:992px){
+@media ( min-width :992px) {
 }
 
-@media(min-width:1200px){
+@media ( min-width :1200px) {
 }
 
 .jumbotron dt {
@@ -85,9 +85,9 @@ div.main {
 }
 
 .center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sharp {
@@ -96,14 +96,26 @@ div.main {
 	border: 0;
 }
 
-
 .small-img img {
 	height: auto;
 	width: 128px;
 }
 
-.jumbotron{
-	 #border: 4px;
-    border-radius: 15px;
-}	
+.jumbotron { #
+	border: 4px;
+	border-radius: 15px;
+}
 
+.navbar .image-clip {
+	max-height: 20px;
+	height: auto;
+	width: auto;
+}
+
+.videotron{
+	padding=0px;
+}
+
+ul.hidden {
+    display: none;
+}
