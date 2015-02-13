@@ -70,7 +70,7 @@
 
 	<div id="video-wrap" class="video-wrap">
 		<video id="video_background" preload="auto" autoplay="autoplay"
-			loop="loop">
+			loop="loop" muted>
 			<source src="video/preview.webm" type="video/webm">
 			<source src="video/preview.ogg" type="video/ogg">
 			<source src="video/preview.mp4" type="video/mp4">
@@ -79,23 +79,6 @@
 
 
 	<div class="container-fluid main">
-<!-- 		<div class="videotron"> -->
-<!-- 			<div id="bgVideo"> -->
-<!-- 				<video id="video_background" preload="auto" autoplay="autoplay" -->
-<!-- 					loop="loop"> -->
-<!-- 					<source src="video/preview.webm" type="video/webm"> -->
-<!-- 					<source src="video/preview.ogg" type="video/ogg"> -->
-<!-- 					<source src="video/preview.mp4" type="video/mp4"> -->
-<!-- 				</video> -->
-<!-- 			</div> -->
-<!-- 			<div class="container"> -->
-<!-- 				<div class="hero-unit"> -->
-<!-- 					<p>Stuff</p> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
-
-
 
 		<div class="jumbotron" id="what">
 			<h1>What</h1>
@@ -170,18 +153,6 @@
 			</div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 		<div class="jumbotron" id="features">
 			<h1>Features</h1>
 			<br />
@@ -236,9 +207,6 @@
 			<h1>In Action</h1>
 			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 		</div>-->
-
-
-
 
 		<div class="jumbotron" id="download">
 			<h1>Download and Fork</h1>
@@ -323,29 +291,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-<!-- 		<div class="jumbotron" id="social"> -->
-<!-- 			<h1>Social</h1> -->
-<!-- 			<div class="row small-img"> -->
-<!-- 				<div class="col-sm-3 col-xs-6"> -->
-<!-- 					<img class="image-clip center-block" src="img/icon-envelope.png"> -->
-<!-- 					<h2 class="text-center">Email</h2> -->
-<!-- 					<p class="text-center sub-title"> -->
-<!-- 						<a id="email-link" href="javascript:void(0);">Please enable -->
-<!-- 							JavaScript</a> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-<!-- 				<div class="col-sm-3 col-xs-6"> -->
-<!-- 					<img class="image-clip center-block" src="img/icon-twitter.png"> -->
-<!-- 					<h2 class="text-center">Twitter</h2> -->
-<!-- 					<p class="text-center sub-title"> -->
-<!-- 						<a href="https://twitter.com/boilrapp" target="_blank">@boilrapp</a> -->
-<!-- 					</p> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
 	</div>
 
 	<div class="panel-footer">
@@ -380,9 +325,7 @@
 								filter : ':not(.external)',
 								scrollThreshold : 0.5,
 								scrollChange: function (nav){
-									console.log("aaa");
 									if($(nav).find('a').attr('href') ==='#video-wrap'){
-										console.log("asdasd");
 										$('#nav').addClass('transparent');										
 									}else{
 										$('#nav').removeClass('transparent');
