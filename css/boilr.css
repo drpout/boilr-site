@@ -16,9 +16,9 @@ div.main {
 	width: auto;
 }
 
-.row div {
-	padding-bottom: 2em;
-}
+/* .row div { */
+/* 	padding-bottom: 2em; */
+/* } */
 
 .jumbotron h1 {
 	font-size: 40px;
@@ -101,7 +101,7 @@ div.main {
 	width: 128px;
 }
 
-.jumbotron { #
+.jumbotron { 
 	border: 4px;
 	border-radius: 15px;
 }
@@ -116,6 +116,24 @@ div.main {
 	padding=0px;
 }
 
+
 ul.hidden {
     display: none;
+}
+
+#owl .item {
+	margin: 0px;
+}
+
+#owl .item img{
+/*   display: block; */
+ 	height: auto;
+	max-height: none;
+	max-width: 100%;
+	width: auto;
+}
+
+.owl-carousel .owl-wrapper-outer  {
+	padding-bottom: 2em;
+	text-align: center;
 }

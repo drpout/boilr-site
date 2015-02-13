@@ -14,55 +14,13 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="css/boilr.css" />
 <link rel="stylesheet" href="css/colorbox.css" />
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<link rel="stylesheet" href="css/owl.theme.css" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 
 </head>
 <body>
-<!-- 	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" -->
-<!-- 		role="navigation" id="nav"> -->
-<!-- 		<div class="container"> -->
-<!-- 			<div class="navbar-header"> -->
-<!-- 				<button type="button" class="navbar-toggle collapsed" -->
-<!-- 					data-toggle="collapse" data-target=".navbar-collapse"> -->
-<!-- 					<span class="sr-only">Toggle navigation</span> <span -->
-<!-- 						class="icon-bar"></span> <span class="icon-bar"></span> <span -->
-<!-- 						class="icon-bar"></span> -->
-<!-- 				</button> -->
-<!-- 				<div class="navbar-inner"> -->
-<!-- 					<a class="navbar-brand" href="#">Boilr</a> <img -->
-<!-- 						src="img/icon-boilr.png" /> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 			<div class="navbar-collapse collapse"> -->
-<!-- 				<ul id="nav" class="nav navbar-nav navbar-right"> -->
-<!-- 					<li><a href="#video-wrap">video-wrap</a></li> -->
-<!-- 					<li><a href="#what">What</a></li> -->
-<!-- 					<li><a href="#inaction">In Action</a></li> -->
-<!-- 					<li><a href="#download">Download</a></li> -->
-<!-- 					<li><a href="#donate">Donate</a></li> -->
-<!-- 										<li><a href="#social">Social</a></li> -->
-<!-- 					<li> -->
-<!-- 											<img class="image-clip center-block" src="img/icon-envelope-white.png">  -->
-<!-- 												<h2 class="text-center">Email</h2> 						<p class="text-center sub-title">  -->
-<!-- 						<a id="email-link" href="javascript:void(0);"> <img -->
-<!-- 							class="image-clip center-block" src="img/icon-envelope-white.png" /> -->
-<!-- 							<p id="email-link-text" class="text-center sub-title">Please -->
-<!-- 								enable JavaScript</p> -->
-<!-- 					</a> 						</p> -->
-<!-- 					</li> -->
-<!-- 					<li> -->
-<!-- 												<h2 class="text-center">Twitter</h2> 						<p class="text-center sub-title"> -->
-<!-- 						<a href="https://twitter.com/boilrapp" target="_blank"> <img -->
-<!-- 							class="image-clip center-block" src="img/icon-twitter-white.png"></a> -->
-<!-- 						</p> -->
-<!-- 					</li> -->
-<!-- 				</ul> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
-<!-- 	</div> -->
-
-
-<div class="navbar navbar-default navbar-fixed-top navbar-inverse"
+	<div class="navbar navbar-default navbar-fixed-top navbar-inverse"
 		role="navigation" id="nav">
 		<div class="container">
 			<div class="navbar-header">
@@ -73,21 +31,22 @@
 						class="icon-bar"></span>
 				</button>
 				<div class="navbar-inner">
-					<a class="navbar-brand" href="#video-wrap">
-					<img src="img/icon-boilr.png" />
-					</a> 
+					<a class="navbar-brand" href="#video-wrap"> <img
+						src="img/icon-boilr.png" />
+					</a>
 				</div>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav ">
-<!-- 					<li><a href="#video-wrap">video-wrap</a></li> -->
+					<!-- 					<li><a href="#video-wrap">video-wrap</a></li> -->
 					<li><a href="#what">What</a></li>
+					<li><a href="#features">Features</a></li>
 					<!--<li><a href="#inaction">In Action</a></li>-->
 					<li><a href="#download">Download</a></li>
 					<li><a href="#donate">Donate</a></li>
 					<!-- 					<li><a href="#social">Social</a></li> -->
-					</ul>
-					
+				</ul>
+
 				<ul id="nav" class="nav navbar-nav navbar-right">
 					<li>
 						<!-- 					<img class="image-clip center-block" src="img/icon-envelope-white.png">  -->
@@ -109,23 +68,17 @@
 	</div>
 
 
-<!-- 	<div class="videotron" id="intro"> -->
-		<div id="video-wrap" class="video-wrap">
-			<video id="video_background" preload="auto" autoplay="autoplay"
-				loop="loop">
-				<source src="video/preview.webm" type="video/webm">
-				<source src="video/preview.ogg" type="video/ogg">
-				<source src="video/preview.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="container">
-			<div class="hero-unit">
-				<p>Stuff</p>
-			</div>
-		</div>
-<!-- 	</div> -->
+	<div id="video-wrap" class="video-wrap">
+		<video id="video_background" preload="auto" autoplay="autoplay"
+			loop="loop">
+			<source src="video/preview.webm" type="video/webm">
+			<source src="video/preview.ogg" type="video/ogg">
+			<source src="video/preview.mp4" type="video/mp4">
+		</video>
+	</div>
 
-<!-- 	<div class="container-fluid main"> -->
+
+	<div class="container-fluid main">
 <!-- 		<div class="videotron"> -->
 <!-- 			<div id="bgVideo"> -->
 <!-- 				<video id="video_background" preload="auto" autoplay="autoplay" -->
@@ -141,6 +94,8 @@
 <!-- 				</div> -->
 <!-- 			</div> -->
 <!-- 		</div> -->
+
+
 
 		<div class="jumbotron" id="what">
 			<h1>What</h1>
@@ -215,10 +170,75 @@
 			</div>
 		</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="jumbotron" id="features">
+			<h1>Features</h1>
+			<br />
+			<div class="row">
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+					<div id="owl">
+						<div class="item">
+							<img src="img/screenshots/alarm-firing.png" />
+						</div>
+
+						<div class="item">
+							<img data-src="img/screenshots/price-hit-creation.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/price-change-creation.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/app-settings.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/search-pairs.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/exchanges.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/delete-alarm.png" />
+						</div>
+
+						<div class="item">
+							<img src="img/screenshots/horizontal.png" />
+						</div>
+					</div>
+				</div>
+
+			<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
+					<p>Boilr is an Android app which monitors Bitcoin,
+						cryptocurrencies and bullion prices, and triggers alarms according
+						to user settings.</p>
+				
+				</div>
+			</div>
+		</div>
+
+
 		<!--<div class="jumbotron" id="inaction">
 			<h1>In Action</h1>
 			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 		</div>-->
+
+
+
 
 		<div class="jumbotron" id="download">
 			<h1>Download and Fork</h1>
@@ -306,26 +326,26 @@
 
 
 
-		<div class="jumbotron" id="social">
-			<h1>Social</h1>
-			<div class="row small-img">
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-envelope.png">
-					<h2 class="text-center">Email</h2>
-					<p class="text-center sub-title">
-						<a id="email-link" href="javascript:void(0);">Please enable
-							JavaScript</a>
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-twitter.png">
-					<h2 class="text-center">Twitter</h2>
-					<p class="text-center sub-title">
-						<a href="https://twitter.com/boilrapp" target="_blank">@boilrapp</a>
-					</p>
-				</div>
-			</div>
-		</div>
+<!-- 		<div class="jumbotron" id="social"> -->
+<!-- 			<h1>Social</h1> -->
+<!-- 			<div class="row small-img"> -->
+<!-- 				<div class="col-sm-3 col-xs-6"> -->
+<!-- 					<img class="image-clip center-block" src="img/icon-envelope.png"> -->
+<!-- 					<h2 class="text-center">Email</h2> -->
+<!-- 					<p class="text-center sub-title"> -->
+<!-- 						<a id="email-link" href="javascript:void(0);">Please enable -->
+<!-- 							JavaScript</a> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-sm-3 col-xs-6"> -->
+<!-- 					<img class="image-clip center-block" src="img/icon-twitter.png"> -->
+<!-- 					<h2 class="text-center">Twitter</h2> -->
+<!-- 					<p class="text-center sub-title"> -->
+<!-- 						<a href="https://twitter.com/boilrapp" target="_blank">@boilrapp</a> -->
+<!-- 					</p> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
 	</div>
 
 	<div class="panel-footer">
@@ -358,8 +378,8 @@
 	<script src="js/jquery.nav.min.js"></script>
 	<script src="js/qrcode.min.js"></script>
 	<script src="js/colorbox.min.js"></script>
-	<script src="js/jquery.parallax.min.js"></script>
-	<script src="js/backgroundVideo.min.js"></script>			
+	<script src="js/backgroundVideo.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>				
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		$(document)
@@ -458,18 +478,44 @@
 						//	$('#video_background_div').parallax('50%', 0.3, true);
 							//$('#video_background').width(($(window).width()));
 							
-							 $("#video_background").backgroundVideo({
-							    parallaxOptions: {
+							$('#video_background').backgroundVideo({
+								parallaxOptions: {
 							    	offset: 60,
 							        effect: 1.7
 							    }
-							    });
+							});
+							
+							var strings = {
+									0:"Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.",
+									1:"1",
+									2:"2",
+									3:"",
+									4:"Boilr is awesome.",
+									5:"such app, much android",
+									6:"lol",
+							}
+
+							
+							
+							var owl = $("#owl");
+							var status = $("#owlStatus");
+							
+							$('#owl').owlCarousel({
+								autoPlay: 3000, //Set AutoPlay to 3 seconds
+								navigation : true, // Show next and prev buttons
+								slideSpeed : 300,
+								paginationSpeed : 400,
+								singleItem : true,
+								navigation : true,
+								lazyLoad : true,
+								afterAction : afterAction
+							});
+												 
+							function afterAction(){
+							  $('#explain').empty();
+							  $('#explain').append("<p>" + strings[this.owl.currentItem] + "</p>");
+							}
 						});
-	
-// 			$( window ).resize(function() {
-// 				$('#video_background').height(($(window).height()));
-// 				$('#video_background_div').parallax('50%', 0.3, true);
-// 			});
 	</script>
 </body>
 </html>
