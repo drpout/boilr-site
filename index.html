@@ -324,6 +324,14 @@
 								changeHash : true,
 								filter : ':not(.external)',
 								scrollThreshold : 0.5,
+								end: function(){
+									$('#nav li').click(function(){
+										$('#nav').removeClass('transparent');
+									});
+									$('.navbar-brand').click(function(){
+										$('#nav').addClass('transparent');
+									});
+								},
 								scrollChange: function (nav){
 									if($(nav).find('a').attr('href') ==='#video-wrap'){
 										$('#nav').addClass('transparent');										
@@ -332,7 +340,7 @@
 									}
 								}
 							});
-
+							
 							$('#qr-donation-btc').colorbox({
 								href : 'img/donations-btc.png',
 								title : 'Boilr BTC donation address'
