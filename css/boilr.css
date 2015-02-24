@@ -1,12 +1,23 @@
 div.main {
-/* 	padding-top: 80px; */
-}
+		padding-top: 30px;
+	}
+
 
 .navbar-header img {
 	height: auto;
 	max-height: 30px;
 	max-width: none;
 	width: auto;
+}
+
+
+body {
+	background-image: url("../img/background_tile_light.png");
+    background-repeat: repeat;
+}
+
+.jumbotron{
+	background-color: rgba(255, 255, 255, 0.439);
 }
 
 .jumbotron img {
