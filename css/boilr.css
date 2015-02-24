@@ -2,14 +2,26 @@ div.main {
 		padding-top: 30px;
 	}
 
-
-.navbar-header img {
-	height: auto;
-	max-height: 30px;
-	max-width: none;
-	width: auto;
+.logo{
+	position:relative;
 }
 
+.logo img{
+	float:left;
+}
+.logo p{
+	padding-left:10px;
+	float:left;
+	font-size: 28px;
+	font-weight: bold
+}
+
+.navbar-inner img {
+	max-width: 40px;
+	height: auto;
+	width: auto;
+	margin-top: -10px;
+}
 
 body {
 	background-image: url("../img/background_tile_light.png");
@@ -95,12 +107,6 @@ body {
 	margin-left: 70px;
 }
 
-.center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .sharp {
 	border-radius: 0;
 	background-image: none;
@@ -123,7 +129,7 @@ body {
 	width: auto;
 }
 
-.videotron{
+.videotron {
 	padding=0px;
 }
 
@@ -153,7 +159,7 @@ ul.hidden {
 	border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0,0,0,0.40);
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);

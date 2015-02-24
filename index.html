@@ -20,7 +20,7 @@
 
 </head>
 <body>
-	<div class="navbar navbar-default navbar-fixed-top navbar-inverse"
+	<div class="navbar navbar-default navbar-fixed-top navbar-inverse "
 		role="navigation" id="nav">
 		<div class="container">
 			<div class="navbar-header">
@@ -31,35 +31,38 @@
 						class="icon-bar"></span>
 				</button>
 				<div class="navbar-inner">
-					<a class="navbar-brand" href="#video-wrap"> <img
-						src="img/icon-boilr.png" />
+					<a class="navbar-brand logo" href="#video-wrap" rel="home">
+					<img src="img/icon-boilr.png"/>
+					<p>Boilr</p>
 					</a>
 				</div>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul id="nav" class="nav navbar-nav ">
-					<!-- 					<li><a href="#video-wrap">video-wrap</a></li> -->
-					<li><a href="#what">What</a></li>
 					<li><a href="#features">Features</a></li>
 					<!--<li><a href="#inaction">In Action</a></li>-->
 					<li><a href="#download">Download</a></li>
 					<li><a href="#donate">Donate</a></li>
-					<!-- 					<li><a href="#social">Social</a></li> -->
 				</ul>
-
 				<ul id="nav" class="nav navbar-nav navbar-right">
 					<li>
-						<!-- 					<img class="image-clip center-block" src="img/icon-envelope-white.png">  -->
-						<!-- 						<h2 class="text-center">Email</h2> --> <!-- 						<p class="text-center sub-title">  -->
 						<a id="email-link" href="javascript:void(0);"> <img
-							class="image-clip center-block" src="img/icon-envelope-white.png" />
+							class="image-clip" src="img/icon-envelope-white.png" />
 							<p id="email-link-text" class="text-center sub-title">Please
 								enable JavaScript</p>
 					</a> 
 					</li>
 					<li>
+						<a href="#" target="_blank"> <img
+							class="image-clip" src="img/icon-google-white.png"></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/boilr" target="_blank"> <img
+							class="image-clip " src="img/icon-facebook-white.png"></a>
+					</li>
+					<li>
 						<a href="https://twitter.com/boilrapp" target="_blank"> <img
-							class="image-clip center-block" src="img/icon-twitter-white.png"></a>
+							class="image-clip" src="img/icon-twitter-white.png"></a>
 					</li>
 				</ul>
 			</div>
@@ -249,21 +252,25 @@
 								changeHash : true,
 								filter : ':not(.external)',
 								scrollThreshold : 0.5,
-								end: function(){
-									$('#nav li').click(function(){
-										$('#nav').removeClass('transparent');
-									});
-									$('.navbar-brand').click(function(){
-										$('#nav').addClass('transparent');
-									});
-								},
 								scrollChange: function (nav){
 									if($(nav).find('a').attr('href') ==='#video-wrap'){
-										$('#nav').addClass('transparent');										
+										//$('#nav').addClass('transparent');										
+										$('#nav').fadeTo(400,0.6);
 									}else{
-										$('#nav').removeClass('transparent');
+										//$('#nav').removeClass('transparent');
+										$('#nav').fadeTo(400,1);
 									}
 								}
+							});
+							
+							$('#nav li').click(function(){
+								//$('#nav').removeClass('transparent');
+								$('#nav').fadeTo(400,0.6);
+							});
+							
+							$('.navbar-brand').click(function(){
+								//$('#nav').addClass('transparent');
+								$('#nav').fadeTo(400,1);
 							});
 							
 							$('#qr-donation-btc').colorbox({
@@ -375,6 +382,8 @@
 							  $('#explain').empty();
 							  $('#explain').append("<p>" + strings[this.owl.currentItem] + "</p>");
 							}
+							
+							$('#nav').fadeTo(0,0.6);
 						});
 	</script>
 </body>
