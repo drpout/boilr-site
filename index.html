@@ -18,218 +18,236 @@
 <link rel="stylesheet" href="css/owl.theme.css" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
 
-</head>
-<body>
-	<div class="navbar navbar-default navbar-fixed-top navbar-inverse "
-		role="navigation" id="nav">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<div class="navbar-inner">
-					<a class="navbar-brand logo" href="#video-wrap" rel="home">
-					<img src="img/icon-boilr.png"/>
-					<p>Boilr</p>
-					</a>
-				</div>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul id="nav" class="nav navbar-nav ">
-					<li><a href="#features">Features</a></li>
-					<!--<li><a href="#inaction">In Action</a></li>-->
-					<li><a href="#download">Download</a></li>
-					<li><a href="#donate">Donate</a></li>
-				</ul>
-				<ul id="nav" class="nav navbar-nav navbar-right">
-					<li><a id="email-link" href="javascript:void(0);"> <img
-							class="image-clip" src="img/icon-envelope-white.png" />
-							<p id="email-link-text" class="text-center sub-title">Please
-								enable JavaScript</p>
-					</a></li>
-					<li><a href="https://plus.google.com/107236041248948193283"
-						rel="publisher" target="_blank"> <img class="image-clip"
-							src="img/icon-google-white.png"></a></li>
-					<li><a href="https://www.facebook.com/boilr" target="_blank">
-							<img class="image-clip " src="img/icon-facebook-white.png">
-					</a></li>
-					<li><a href="https://twitter.com/boilrapp" target="_blank">
-							<img class="image-clip" src="img/icon-twitter-white.png">
-					</a></li>
-				</ul>
+<script id="nav-template" type="text/x-handlebars-template">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<div class="navbar-inner">
+				<a class="navbar-brand logo hover" href="#video-wrap" rel="home">
+				<img src="img/icon-boilr.png"/>
+				<p>Boilr</p>
+				</a>
 			</div>
 		</div>
+		<div class="navbar-collapse collapse">
+			<ul id="nav" class="nav navbar-nav ">
+				<li><a href="#features">{{features}}</a></li>
+				<li><a href="#supported">{{supported}}</a></li>
+				<li><a href="#download">{{download}}</a></li>
+				<li><a href="#donate">{{donate}}</a></li>
+				<li><a href="#similar">{{similar}}</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a id="email-link" href="javascript:void(0);"> <img
+						class="image-clip hover" src="img/icon-envelope-3.png" />
+						<p id="email-link-text" class="text-center sub-title"></p>
+				</a></li>
+				<li><a href="https://plus.google.com/107236041248948193283"
+					rel="publisher" target="_blank"> <img class="image-clip hover"
+						src="img/icon-google.png"></a></li>
+				<li><a href="https://www.facebook.com/boilr" target="_blank">
+						<img class="image-clip hover" src="img/icon-facebook.png">
+				</a></li>
+				<li><a href="https://twitter.com/boilrapp" target="_blank">
+						<img class="image-clip hover" src="img/icon-twitter.png">
+				</a></li>
+				<li><a href="https://www.reddit.com/r/Boilr" target="_blank">
+						<img class="image-clip hover" src="img/icon-reddit.png">
+				</a></li>
+			</ul>
+		</div>
 	</div>
+</script>
 
+<script id="main-template" type="text/x-handlebars-template">
+	<div class="jumbotron" id="features">
+		<h1 class="translate" id="features">{{features}}</h1>
+		<br />
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 col-xs-6">
+				<div id="owl">
+					<div class="item">
+						<img src="img/screenshots/alarm-firing.png" />
+					</div>
 
-	<div id="video-wrap" class="video-wrap">
-		<video id="video_background" preload="auto" autoplay="autoplay"
-			loop="loop" muted>
-			<source src="video/preview.webm" type="video/webm">
-			<source src="video/preview.ogg" type="video/ogg">
-			<source src="video/preview.mp4" type="video/mp4">
-		</video>
-	</div>
+					<div class="item">
+						<img data-src="img/screenshots/price-hit-creation.png" />
+					</div>
 
+					<div class="item">
+						<img src="img/screenshots/price-change-creation.png" />
+					</div>
 
-	<div class="container-fluid main">
-		<div class="jumbotron" id="features">
-			<h1>Features</h1>
-			<br />
-			<div class="row">
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-					<div id="owl">
-						<div class="item">
-							<img src="img/screenshots/alarm-firing.png" />
-						</div>
+					<div class="item">
+						<img src="img/screenshots/app-settings.png" />
+					</div>
 
-						<div class="item">
-							<img data-src="img/screenshots/price-hit-creation.png" />
-						</div>
+					<div class="item">
+						<img src="img/screenshots/search-pairs.png" />
+					</div>
 
-						<div class="item">
-							<img src="img/screenshots/price-change-creation.png" />
-						</div>
+					<div class="item">
+						<img src="img/screenshots/exchanges.png" />
+					</div>
 
-						<div class="item">
-							<img src="img/screenshots/app-settings.png" />
-						</div>
+					<div class="item">
+						<img src="img/screenshots/delete-alarm.png" />
+					</div>
 
-						<div class="item">
-							<img src="img/screenshots/search-pairs.png" />
-						</div>
-
-						<div class="item">
-							<img src="img/screenshots/exchanges.png" />
-						</div>
-
-						<div class="item">
-							<img src="img/screenshots/delete-alarm.png" />
-						</div>
-
-						<div class="item">
-							<img src="img/screenshots/horizontal.png" />
-						</div>
+					<div class="item">
+						<img src="img/screenshots/horizontal.png" />
 					</div>
 				</div>
-
-			<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
-					<p>Boilr is an Android app which monitors Bitcoin,
-						cryptocurrencies and bullion prices, and triggers alarms according
-						to user settings.</p>
-				
-				</div>
 			</div>
-		</div>
 
-
-		<!--<div class="jumbotron" id="inaction">
-			<h1>In Action</h1>
-			<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
-		</div>-->
-
-		<div class="jumbotron" id="download">
-			<h1>Download and Fork</h1>
-			<div class="row small-img">
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-fdroid.png">
-					<h2 class="text-center">F-Droid</h2>
-					<p class="text-center sub-title">(Preferred)</p>
-					<p class="text-center">
-						<a id="fdroid-link"
-							href="https://f-droid.org/repository/browse/?fdid=mobi.boilr.boilr"
-							target="_blank" class="btn btn-default sharp">DOWNLOAD</a>
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-googleplay.png">
-					<h2 class="text-center">Google Play</h2>
-					<p class="text-center sub-title" style="color: transparent;">P</p>
-					<p class="text-center">
-						<a id="play-link"
-							href="https://play.google.com/store/apps/details?id=mobi.boilr.boilr"
-							target="_blank" class="btn btn-default sharp">DOWNLOAD</a>
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-apk.png">
-					<h2 id="text-apk" class="text-center">APK</h2>
-					<div id="qr-apk" class="hidden"></div>
-					<p class="text-center sub-title">
-						(<a id="qr-apk-link">Please enable JavaScript</a>)
-					</p>
-					<p class="text-center">
-						<a id="apk-link" href="" class="btn btn-default sharp disabled">DOWNLOAD</a>
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img src="img/icon-github.png" class="image-clip center-block">
-					<h2 class="text-center">Source Code</h2>
-					<p class="text-center sub-title" style="color: transparent;">P</p>
-					<p class="text-center">
-						<a href="https://github.com/andrefbsantos/boilr" target="_blank"
-							class="btn btn-default sharp">GitHub</a>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="jumbotron" id="donate">
-			<h1>Donate or Tip</h1>
-			<p>
-				Boilr is <a href="https://www.gnu.org/copyleft/gpl.html"
-					target="_blank">free (as in freedom) software</a>. If useful,
-				consider making a donation or sending a tip:
-			</p>
-			<div style='word-break: break-all;' class="row small-img">
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-bitcoin.png">
-					<h2 class="text-center">Bitcoin</h2>
-					<p class="text-center sub-title">
-						<a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a><br />
-						(<a id="qr-donation-btc" href="img/donations-btc.png">QR Code</a>)
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-monero.png">
-					<h2 class="text-center">Monero</h2>
-					<p class="text-center sub-title">43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-dogecoin.png">
-					<h2 class="text-center">Dogecoin</h2>
-					<p class="text-center sub-title">
-						<a href="dogecoin:DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg">DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg</a><br />
-						(<a id="qr-donation-doge" href="img/donations-doge.png">QR
-							Code</a>)
-					</p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<img class="image-clip center-block" src="img/icon-nextcoin.png">
-					<h2 class="text-center">Nextcoin</h2>
-					<p class="text-center sub-title">NXT-PMQL-5RXJ-QE46-2L4SQ</p>
-				</div>
+		<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
+				<p>{{boilrAppInfo}}</p>
+			
 			</div>
 		</div>
 	</div>
 
-	<div class="panel-footer">
-		<p>Original F-Droid logo by William Theaker and Robert Martinez.
-			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
-			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.<br/>
-			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a> and <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-			Boilr icon by <a href="http://vimeo.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
-			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.<br />
-			Website source-code is available <a href="https://github.com/andrefbsantos/boilr-site" target="_blank">at GitHub</a> under <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+	<!--<div class="jumbotron" id="inaction">
+		<h1>{{inAction}}</h1>
+		<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
+	</div>-->
+	
+	<div class="jumbotron" id="supported">
+		<h1>{{supported}}</h1>
+	</div>
+
+	<div class="jumbotron" id="download">
+		<h1>{{downloadAndFork}}</h1>
+		<div class="row small-img">
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-fdroid.png">
+				<h2 class="text-center">F-Droid</h2>
+				<p class="text-center sub-title">(Preferred)</p>
+				<p class="text-center">
+					<a id="fdroid-link"
+						href="https://f-droid.org/repository/browse/?fdid=mobi.boilr.boilr"
+						target="_blank" class="btn btn-default sharp">{{toUpperCase download}}</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-googleplay.png">
+				<h2 class="text-center">Google Play</h2>
+				<p class="text-center sub-title" style="color: transparent;">P</p>
+				<p class="text-center">
+					<a id="play-link"
+						href="https://play.google.com/store/apps/details?id=mobi.boilr.boilr"
+						target="_blank" class="btn btn-default sharp">{{toUpperCase download}}</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-apk.png">
+				<h2 id="text-apk" class="text-center">APK</h2>
+				<div id="qr-apk" class="hidden"></div>
+				<p class="text-center sub-title">
+					(<a id="qr-apk-link">{{pleaseEnableJavaScript}}</a>)
+				</p>
+				<p class="text-center">
+					<a id="apk-link" href="" class="btn btn-default sharp disabled">{{toUpperCase download}}</a>
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img src="img/icon-github.png" class="image-clip center-block">
+				<h2 class="text-center">{{sourceCode}}</h2>
+				<p class="text-center sub-title" style="color: transparent;">P</p>
+				<p class="text-center">
+					<a href="https://github.com/andrefbsantos/boilr" target="_blank"
+						class="btn btn-default sharp">GitHub</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="donate">
+		<h1>{{donateOrTip}}</h1>
+		<p>{{boilrIs}} <a href="https://www.gnu.org/copyleft/gpl.html"
+				target="_blank">{{freeAsInFreedom}}</a>. {{donateOrTipText2}}
 		</p>
+		<div style='word-break: break-all;' class="row small-img">
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-bitcoin.png">
+				<h2 class="text-center">Bitcoin</h2>
+				<p class="text-center sub-title">
+					<a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a><br />
+					(<a id="qr-donation-btc" href="img/donations-btc.png">QR Code</a>)
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-monero.png">
+				<h2 class="text-center">Monero</h2>
+				<p class="text-center sub-title">43KcTwXw5D43YRE8MSG4D7X3S2kjU6ehBABucyKAVNYnKbNxpGWZ8zGbEhCq79N4ZGDtefU5w4AGoeR6eNB5yMbEPhAw3FT</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-dogecoin.png">
+				<h2 class="text-center">Dogecoin</h2>
+				<p class="text-center sub-title">
+					<a href="dogecoin:DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg">DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg</a><br />
+					(<a id="qr-donation-doge" href="img/donations-doge.png">QR
+						Code</a>)
+				</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<img class="image-clip center-block" src="img/icon-nextcoin.png">
+				<h2 class="text-center">Nextcoin</h2>
+				<p class="text-center sub-title">NXT-PMQL-5RXJ-QE46-2L4SQ</p>
+			</div>
+		</div>
 	</div>
+</div>
+
+<div class="jumbotron" id="similar">
+		<h1>{{similar}}</h1>
+</div>
+
+<div class="panel-footer">
+	<p>{{originalFDroid}}. {{bitcoinBy}}<a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
+		{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
+		<br/>
+		{{modifiedVersion}}<a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>, <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+		{{boilrBy}}<a href="http://vimeo.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
+		{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.<br />
+		{{websiteSource}} <a href="https://github.com/andrefbsantos/boilr-site" target="_blank">at GitHub</a>. {{licensedUnder}} <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+	</p>
+</div>
+
+</script>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse"
+	role="navigation" id="navbar">
+</div>
+
+
+<div id="video-wrap" class="video-wrap">
+	<video id="video_background" preload="auto" autoplay="autoplay"
+		loop="loop" muted>
+		<source src="video/preview.webm" type="video/webm">
+		<source src="video/preview.ogg" type="video/ogg">
+		<source src="video/preview.mp4" type="video/mp4">
+	</video>
+</div>
+
+<div class="container-fluid main" id="main">
+</div>
+
+	
 
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v3.0.0.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<!-- 	<script src="js/ie10-viewport-bug-workaround.js"></script> -->
 	<script src="js/jquery.nav.min.js"></script>
@@ -239,147 +257,145 @@
 	<script src="js/owl.carousel.min.js"></script>				
 	<script>
 		//https://github.com/davist11/jQuery-One-Page-Nav
-		$(document)
-				.ready(
-						function() {
-							$('#nav').onePageNav({
-								currentClass : 'active',
-								changeHash : true,
-								filter : ':not(.external)',
-								scrollThreshold : 0.5,
-								scrollChange: function (nav){
-									if($(nav).find('a').attr('href') ==='#video-wrap'){
-										//$('#nav').addClass('transparent');										
-										$('#nav').fadeTo(400,0.6);
-									}else{
-										//$('#nav').removeClass('transparent');
-										$('#nav').fadeTo(400,1);
-									}
-								}
-							});
-							
-							$('#nav li').click(function(){
-								//$('#nav').removeClass('transparent');
-								$('#nav').fadeTo(400,0.6);
-							});
-							
-							$('.navbar-brand').click(function(){
-								//$('#nav').addClass('transparent');
-								$('#nav').fadeTo(400,1);
-							});
-							
-							$('#qr-donation-btc').colorbox({
-								href : 'img/donations-btc.png',
-								title : 'Boilr BTC donation address'
-							});
-							$('#qr-donation-doge').colorbox({
-								href : 'img/donations-doge.png',
-								title : 'Boilr DOGE donation address'
-							});
+		
+		
+		var fade = 0.5;
 
-							var ua = navigator.userAgent.toLowerCase();
-							if (ua.indexOf("android") > -1) {
-								$('#fdroid-link').attr('href',
-										'fdroid.app:mobi.boilr.boilr');
-								$('#play-link').attr('href',
-										'market://details?id=mobi.boilr.boilr');
-							}
+		function setup(data){
+			var navTemplate = $("#nav-template").html();
+			navTemplate = Handlebars.compile(navTemplate);
+			var mainTemplate = $("#main-template").html();
+			mainTemplate = Handlebars.compile(mainTemplate);
+			$('#navbar').append(navTemplate(data));
+			$('#main').append(mainTemplate(data));
 
-							var tsoh = 'openmailbox.org';
-							var liame = 'boilr@' + tsoh;
-							$('#email-link').attr('href',
-									'mail' + 'to:' + liame);
-							$('#email-link-text').remove();
+			var url = window.location.href;
+			if(url.indexOf("#video-wrap") > -1 || url.indexOf("#") === -1 ){
+				$('#navbar').fadeTo(0,0.6);
+			}
 
-							var qrApkLink = $('#qr-apk-link');
-							(function() {
-								$
-										.ajax(
-												{
-													url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
-												})
-										.done(
-												function(data) {
-													//console.log(data);
-													if (data.length > 0) {
-														var version = data[0].tag_name;
-														var url = data[0].assets[0].browser_download_url;
-														var apkLink = $('#apk-link');
-														apkLink.attr('href',
-																url);
-														apkLink
-																.removeClass('disabled');
-														var textApk = $('#text-apk');
-														textApk.text(textApk
-																.text()
-																+ ' v'
-																+ version);
-														var qrcode = new QRCode(
-																'qr-apk');
-														qrcode.makeCode(url);
-														qrApkLink
-																.text('QR Code');
-														qrApkLink
-																.attr('href',
-																		'javascript:void(0);');
-														qrApkLink
-																.colorbox({
-																	inline : true,
-																	href : $('#qr-apk img'),
-																	title : 'APK v'
-																			+ version
-																			+ ' download link'
-																});
-													} else {
-														qrApkLink
-																.text('Error: cannot connect to GitHub');
-													}
-												})
-										.fail(
-												function() {
-													qrApkLink
-															.text('Error: cannot connect to GitHub');
-												});
-							})();
-							
-							$('#video_background').backgroundVideo({
-								parallaxOptions: {
-							    	offset: 60,
-							        effect: 1.7
-							    }
+			$('#navbar').onePageNav({
+				currentClass : 'active',
+				changeHash : true,
+				filter : ':not(.external)',
+				scrollThreshold : 0.5,
+				scrollChange: function (nav){
+					if($(nav).find('a').attr('href') ==='#video-wrap'){
+						$('#navbar').fadeTo(400,fade);
+					}else{
+						$('#navbar').fadeTo(400,1);
+					}
+				}
+			});
+			
+			$('#nav li').click(function(){
+				$('#navbar').fadeTo(400,1);
+			});
+			
+			$('.navbar-brand').click(function(){
+				$('#navbar').fadeTo(400,fade);
+			});
+
+			$('#qr-donation-btc').colorbox({
+				href : 'img/donations-btc.png',
+				title : 'Boilr BTC donation address'
+			});
+			$('#qr-donation-doge').colorbox({
+				href : 'img/donations-doge.png',
+				title : 'Boilr DOGE donation address'
+			});
+
+			var ua = navigator.userAgent.toLowerCase();
+			if (ua.indexOf("android") > -1) {
+				$('#fdroid-link').attr('href', 'fdroid.app:mobi.boilr.boilr');
+				$('#play-link').attr('href', 'market://details?id=mobi.boilr.boilr');
+			}
+
+			var tsoh = 'openmailbox.org';
+			var liame = 'boilr@' + tsoh;
+			$('#email-link').attr('href', 'mail' + 'to:' + liame);
+			$('#email-link-text').remove();
+
+			var qrApkLink = $('#qr-apk-link');
+			(function() {
+			$.ajax({
+				url : 'https://api.github.com/repos/andrefbsantos/boilr/releases'
+				}).done(
+					function(data) {
+						//console.log(data);
+						if (data.length > 0) {
+							var version = data[0].tag_name;
+							var url = data[0].assets[0].browser_download_url;
+							var apkLink = $('#apk-link');
+							apkLink.attr('href',url);
+							apkLink.removeClass('disabled');
+							var textApk = $('#text-apk');
+							textApk.text(textApk.text()	+ ' v'+ version);
+							var qrcode = new QRCode('qr-apk');
+							qrcode.makeCode(url);
+							qrApkLink.text('QR Code');
+							qrApkLink.attr('href','javascript:void(0);');
+							qrApkLink.colorbox({
+								inline : true,
+								href : $('#qr-apk img'),
+								title : 'APK v' + version + ' download link'
 							});
-							
-							var strings = {
-									0:"Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.",
-									1:"1",
-									2:"2",
-									3:"",
-									4:"Boilr is awesome.",
-									5:"such app, much android",
-									6:"lol",
-							}
+						} else {
+							qrApkLink.text('Error: cannot connect to GitHub');
+					}
+				}).fail(function() {
+					qrApkLink.text('Error: cannot connect to GitHub');
+				});
+			})();
+			
+			$('#video_background').backgroundVideo({
+				parallaxOptions: {
+			    	offset: 60,
+			        effect: 1.7
+			    }
+			});
+		
+			
+			$('#owl').owlCarousel({
+				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				navigation : true, // Show next and prev buttons
+				slideSpeed : 300,
+				paginationSpeed : 400,
+				singleItem : true,
+				navigation : true,
+				lazyLoad : true,
+				afterAction : afterAction
+			});
 
-							var owl = $("#owl");
-							var status = $("#owlStatus");
-							
-							$('#owl').owlCarousel({
-								autoPlay: 3000, //Set AutoPlay to 3 seconds
-								navigation : true, // Show next and prev buttons
-								slideSpeed : 300,
-								paginationSpeed : 400,
-								singleItem : true,
-								navigation : true,
-								lazyLoad : true,
-								afterAction : afterAction
-							});
-												 
-							function afterAction(){
-							  $('#explain').empty();
-							  $('#explain').append("<p>" + strings[this.owl.currentItem] + "</p>");
-							}
-							
-							$('#nav').fadeTo(0,0.6);
-						});
+			function afterAction(){
+				$('#explain').empty();
+				$('#explain').append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>");
+			}						
+		 }
+		
+
+
+
+		$(document).ready( function() {
+			Handlebars.registerHelper('toUpperCase', function(str) {
+				if(str && typeof str ==='string'){
+	  				return str.toUpperCase();
+	  			}else{
+	  				return '';
+	  			}
+			});
+					
+			var userLang = navigator.language || navigator.userLanguage; 
+			var strings = "json/"+userLang.substring(0,userLang.indexOf('-'))+".json";
+			
+			$.getJSON(strings, function(data) {
+				setup(data);
+			}).fail( function(){
+				$.getJSON("json/en.json", function(data) {
+					setup(data);
+				});
+			});
+		});		
 	</script>
 </body>
 </html>
