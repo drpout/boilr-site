@@ -188,3 +188,7 @@ ul.hidden {
     width: 100%; 
     z-index:1;
 }
+
+.center-image{
+	margin-top: 26px;
+}

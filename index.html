@@ -71,50 +71,70 @@
 	</div>
 </script>
 
+<script id="video-template" type="text/x-handlebars-template">
+	<div id="video-wrap" class="video-wrap">
+		<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
+			loop="loop" muted>
+			<source src="video/preview.webm" type="video/webm">
+			<source src="video/preview.ogg" type="video/ogg">
+			<source src="video/preview.mp4" type="video/mp4">
+		</video>
+
+<!--		<div class="overlay">
+			<h1 for="exampleInputEmail1">Newsletter</h1>
+			<form class="form-inline">
+				<div class="form-group">
+	    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+	  			</div>	
+	  			<button type="submit" class="btn btn-default">Send invitation</button>
+	  		</form>
+		</div>-->
+	</div>
+</script>
+
 <script id="main-template" type="text/x-handlebars-template">
 	<div class="jumbotron" id="features">
 		<h1 class="translate" id="features">{{features}}</h1>
-		<br />
+		<br/>
+		<p>{{boilrAppInfo}}</p>
+		<br/>
 		<div class="row">
 			<div class="col-lg-6 col-sm-6 col-xs-6">
 				<div id="owl">
 					<div class="item">
-						<img src="img/screenshots/alarm-firing.png" />
+						<img class="lazyOwl" data-src="img/screenshots/alarm-firing.png" />
+					</div>
+					<div class="item">
+						<img class="lazyOwl" data-src="img/screenshots/price-hit-creation.png" />
 					</div>
 
 					<div class="item">
-						<img data-src="img/screenshots/price-hit-creation.png" />
+						<img class="lazyOwl" data-src="img/screenshots/price-change-creation.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/price-change-creation.png" />
+						<img class="lazyOwl" data-src="img/screenshots/app-settings.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/app-settings.png" />
+						<img class="lazyOwl" data-src="img/screenshots/search-pairs.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/search-pairs.png" />
+						<img class="lazyOwl" data-src="img/screenshots/exchanges.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/exchanges.png" />
+						<img class="lazyOwl" data-src="img/screenshots/delete-alarm.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/delete-alarm.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/horizontal.png" />
+						<img class="lazyOwl" data-src="img/screenshots/horizontal.png" />
 					</div>
 				</div>
 			</div>
-
-		<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
+			<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
 				<p>{{boilrAppInfo}}</p>
-			
 			</div>
 		</div>
 	</div>
@@ -218,7 +238,7 @@
 <div class="panel-footer">
 	<p>{{originalFDroid}}. {{bitcoinBy}}<a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
 		{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
-		{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>
+		{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
 		<br/>
 		{{modifiedVersion}}<a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
 		<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
@@ -284,14 +304,14 @@
 
 
 <div id="video-wrap" class="video-wrap">
-	<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
+	<!-- <video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
 		loop="loop" muted>
 		<source src="video/preview.webm" type="video/webm">
 		<source src="video/preview.ogg" type="video/ogg">
 		<source src="video/preview.mp4" type="video/mp4">
-	</video>
+	</video> -->
 
-	<div class="overlay">
+	<!-- <div class="overlay">
 		<h1 for="exampleInputEmail1">Newsletter</h1>
 		<form class="form-inline">
 			<div class="form-group">
@@ -299,54 +319,69 @@
   			</div>	
   			<button type="submit" class="btn btn-default">Send invitation</button>
   		</form>
-	</div>
+	</div> -->
 </div>
+
 
 <div class="container-fluid main" id="main">
 	<div class="jumbotron" id="features">
 		<h1 class="translate" id="features">Features</h1>
 		<br />
+			<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
+		<br/>
 		<div class="row">
-			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div id="owl">
-					<div class="item">
-						<img src="img/screenshots/alarm-firing.png" />
-					</div>
-
-					<div class="item">
-						<img data-src="img/screenshots/price-hit-creation.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/price-change-creation.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/app-settings.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/search-pairs.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/exchanges.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/delete-alarm.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/horizontal.png" />
-					</div>
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12 ">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+			
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
 				</div>
 			</div>
 
-		<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
-				<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12 ">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
 			
-			 </div>
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+
+			<div class="row center-image col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -450,7 +485,7 @@
 	<p>Original F-Droid logo by William Theaker and Robert Martinez.
 			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
 			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
-			Reedit icon by <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon </a>.
+			Reddit icon by <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
 			<br/>
 			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
 			<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
@@ -500,10 +535,15 @@
 
 		function setupLanguage(data){
 			var navTemplate = $("#nav-template").html();
-			navTemplate = Handlebars.compile(navTemplate);
+			var videoTemplate = $('#video-template').html();
 			var mainTemplate = $("#main-template").html();
+			
+			navTemplate = Handlebars.compile(navTemplate);
+			videoTemplate = Handlebars.compile(videoTemplate);
 			mainTemplate = Handlebars.compile(mainTemplate);
+
 			$('#navbar').empty().append(navTemplate(data));
+			$('#video-wrap').empty().append(videoTemplate(data));
 			$('#main').empty().append(mainTemplate(data));		
 		 }
 
@@ -598,7 +638,7 @@
 			$('#owl').owlCarousel({
 				autoPlay: 3000, //Set AutoPlay to 3 seconds
 				navigation : true, // Show next and prev buttons
-				slideSpeed : 300,
+				slideSpeed : 400,
 				paginationSpeed : 400,
 				singleItem : true,
 				navigation : true,
@@ -608,20 +648,24 @@
 
 
 			function afterAction(){
-				$('#explain').empty();
-				$('#explain').append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>");
+				var owl = this;
+				$('#explain').fadeOut(200,function(){
+					$(this).empty().append("<p>" + data["featureImage"+owl.owl.currentItem] + "</p>").fadeIn(200);
+				});
+				//.empty().append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>").fadeIn();
+				//$('#explain').append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>");
 			}
 		 }
-		
-		$(document).ready( function() {
-			Handlebars.registerHelper('toUpperCase', function(str) {
-				if(str && typeof str ==='string'){
-	  				return str.toUpperCase();
-	  			}else{
-	  				return '';
-	  			}
-			});
 
+		 Handlebars.registerHelper('toUpperCase', function(str) {
+			if(str && typeof str ==='string'){
+	  			return str.toUpperCase();
+	  		}else{
+	  			return '';
+	  		}
+		});
+		
+		$(document).ready( function() {	
 			var userLang = navigator.language || navigator.userLanguage; 
 			userLang = userLang.substring(0,userLang.indexOf('-'));
 			setup(userLang);
