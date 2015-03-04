@@ -157,6 +157,7 @@ ul.hidden {
 	z-index: 0;
 }
 
+
 .overlay {
     position: relative;
     width: 100%;
@@ -175,16 +176,18 @@ ul.hidden {
 
 .overlay > div{
 	position: relative;
-	left: 50%;
+	left: 70%;
     top: 50%;
 }
 
 .overlay h1 {
 	font-size: 100px;
+	color:white;
 }
 
-.overlay h2 {
-	font-size: 60px;
+.overlay h3 {
+	/*font-size: 60px;*/
+	color:white;
 }
 
 .margin-top > div {
