@@ -18,10 +18,11 @@
 	
 	"bitcoinBy" : "Bitcoin logo by ",
 	"envelopeBy" : "Envelope icon by ",
+	"redditBy":"Reddit icon by",
 	"modifiedVersion" : "Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by ",
 	"boilrBy" : "Boilr icon by ",
 	"allLicensedUnder" : "All licensed under ",
-	"websiteSource" : "Website source-code is available atfr",
+	"websiteSource" : "Website source-code is available at",
 	"licensedUnder" : "Licensed under ",
 	"language" : "Language",
 	"english" : "English",

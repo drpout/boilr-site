@@ -43,10 +43,11 @@
 				<li><a href="#similar">{{similar}}</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a id="email-link" href="javascript:void(0);"> <img
-						class="image-clip hover" src="img/icon-envelope-3.png" />
-						<p id="email-link-text" class="text-center sub-title">Please enable JavaScript</p>
-				</a></li>
+				<li>
+					<a id="email-link" href="javascript:void(0);">
+						<img class="image-clip hover" src="img/icon-envelope-3.png" />
+					</a>
+				</li>
 				<li><a href="https://plus.google.com/107236041248948193283"
 					rel="publisher" target="_blank"> <img class="image-clip hover"
 						src="img/icon-google.png"></a></li>
@@ -71,50 +72,76 @@
 	</div>
 </script>
 
+<script id="video-template" type="text/x-handlebars-template">
+		<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
+			loop="loop" muted>
+			<source src="video/preview.webm" type="video/webm">
+			<source src="video/preview.ogg" type="video/ogg">
+			<source src="video/preview.mp4" type="video/mp4">
+			<img src="/images/product/product-parent-hero.jpg" title="Your browser does not support the <video> tag">
+		</video>
+
+		<div class="overlay">
+			<div>
+				<h1>Boilr</h1>
+				<h3>Freer than Freedom</h3>
+			</div>
+			<div>
+				<h1 for="exampleInputEmail1">Newsletter</h1>
+				<h3 >Boilr is alive. Sign up our newsletter</h3>
+				<form class="form-inline">
+					<div class="form-group">
+		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		  			</div>	
+		  			<button type="submit" class="btn btn-default">Sign up</button>
+		  		</form>
+	  		<div
+		</div>
+</script>
+
 <script id="main-template" type="text/x-handlebars-template">
 	<div class="jumbotron" id="features">
 		<h1 class="translate" id="features">{{features}}</h1>
-		<br />
+		<br/>
+		<p>{{boilrAppInfo}}</p>
+		<br/>
 		<div class="row">
 			<div class="col-lg-6 col-sm-6 col-xs-6">
 				<div id="owl">
 					<div class="item">
-						<img src="img/screenshots/alarm-firing.png" />
+						<img class="lazyOwl" data-src="img/screenshots/alarm-firing.png" />
+					</div>
+					<div class="item">
+						<img class="lazyOwl" data-src="img/screenshots/price-hit-creation.png" />
 					</div>
 
 					<div class="item">
-						<img data-src="img/screenshots/price-hit-creation.png" />
+						<img class="lazyOwl" data-src="img/screenshots/price-change-creation.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/price-change-creation.png" />
+						<img class="lazyOwl" data-src="img/screenshots/app-settings.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/app-settings.png" />
+						<img class="lazyOwl" data-src="img/screenshots/search-pairs.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/search-pairs.png" />
+						<img class="lazyOwl" data-src="img/screenshots/exchanges.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/exchanges.png" />
+						<img class="lazyOwl" data-src="img/screenshots/delete-alarm.png" />
 					</div>
 
 					<div class="item">
-						<img src="img/screenshots/delete-alarm.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/horizontal.png" />
+						<img class="lazyOwl" data-src="img/screenshots/horizontal.png" />
 					</div>
 				</div>
 			</div>
-
-		<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
+			<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
 				<p>{{boilrAppInfo}}</p>
-			
 			</div>
 		</div>
 	</div>
@@ -218,11 +245,15 @@
 <div class="panel-footer">
 	<p>{{originalFDroid}}. {{bitcoinBy}}<a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
 		{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
+		{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
 		<br/>
-		{{modifiedVersion}}<a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>, <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-		{{boilrBy}}<a href="http://vimeo.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
-		{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.<br />
-		{{websiteSource}} <a href="https://github.com/andrefbsantos/boilr-site" target="_blank">github.com/andrefbsantos/boilr-site</a>. {{licensedUnder}} <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+		{{modifiedVersion}}<a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
+		<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+		{{boilrBy}}<a href="http://cargocollective.com/algazarra/index" target="_blank">Ricardo Duarte</a>.
+		{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
+		<br />
+		{{websiteSource}} <a href="https://github.com/andrefbsantos/boilr-site" target="_blank">github.com/andrefbsantos/boilr-site</a>.
+		{{licensedUnder}} <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
 	</p>
 </div>
 
@@ -257,10 +288,10 @@
 				<li><a href="#similar">Similar</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a id="email-link" href="javascript:void(0);"> <img
+				<!-- <li><a id="email-link" href="javascript:void(0);"> <img
 						class="image-clip hover" src="img/icon-envelope-3.png" />
 						<p id="email-link-text" class="text-center sub-title">Please enable JavaScript</p>
-				</a></li>
+				</a></li> -->
 				<li><a href="https://plus.google.com/107236041248948193283"
 					rel="publisher" target="_blank"> <img class="image-clip hover"
 						src="img/icon-google.png"></a></li>
@@ -280,59 +311,85 @@
 
 
 <div id="video-wrap" class="video-wrap">
-	<video id="video_background" preload="auto" autoplay="autoplay"
+	<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
 		loop="loop" muted>
 		<source src="video/preview.webm" type="video/webm">
 		<source src="video/preview.ogg" type="video/ogg">
 		<source src="video/preview.mp4" type="video/mp4">
+		<img src="img/screenshots/alarm-firing.png" title="Your browser does not support the <video> tag">
 	</video>
+
+	<div class="overlay">
+		<h1 for="exampleInputEmail1">Newsletter</h1>
+		<form class="form-inline">
+			<div class="form-group">
+    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  			</div>	
+  			<button type="submit" class="btn btn-default">Send invitation</button>
+  		</form>
+	</div>
 </div>
+
 
 <div class="container-fluid main" id="main">
 	<div class="jumbotron" id="features">
 		<h1 class="translate" id="features">Features</h1>
 		<br />
-		<div class="row">
-			<div class="col-lg-6 col-sm-6 col-xs-6">
-				<div id="owl">
-					<div class="item">
-						<img src="img/screenshots/alarm-firing.png" />
-					</div>
-
-					<div class="item">
-						<img data-src="img/screenshots/price-hit-creation.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/price-change-creation.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/app-settings.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/search-pairs.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/exchanges.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/delete-alarm.png" />
-					</div>
-
-					<div class="item">
-						<img src="img/screenshots/horizontal.png" />
-					</div>
+			<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
+		<br/>
+		<div class="row margin-top">
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12 ">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+			
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
 				</div>
 			</div>
 
-		<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
-				<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12 ">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
 			
-			 </div>
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
+
+			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-firing.png" />
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-6">
+				Description
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -435,11 +492,16 @@
 <div class="panel-footer">
 	<p>Original F-Droid logo by William Theaker and Robert Martinez.
 			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
-			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.<br/>
-			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>, <a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-			Boilr icon by <a href="http://vimeo.com/ricardoduarte" target="_blank">Ricardo Duarte</a>.
-			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.<br />
-			Website source-code is available <a href="https://github.com/andrefbsantos/boilr-site" target="_blank"> github.com/andrefbsantos/boilr-site</a> under <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
+			Reddit icon by <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
+			<br/>
+			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
+			<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+			Boilr icon by <a href="http://cargocollective.com/algazarra/index" target="_blank">Ricardo Duarte</a>.
+			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
+			<br />
+			Website source-code is available <a href="https://github.com/andrefbsantos/boilr-site" target="_blank"> github.com/andrefbsantos/boilr-site</a>.
+			Licensed under <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
 	</p>
 </div>
 </div>
@@ -481,10 +543,15 @@
 
 		function setupLanguage(data){
 			var navTemplate = $("#nav-template").html();
-			navTemplate = Handlebars.compile(navTemplate);
+			var videoTemplate = $('#video-template').html();
 			var mainTemplate = $("#main-template").html();
+			
+			navTemplate = Handlebars.compile(navTemplate);
+			videoTemplate = Handlebars.compile(videoTemplate);
 			mainTemplate = Handlebars.compile(mainTemplate);
+
 			$('#navbar').empty().append(navTemplate(data));
+			$('#video-wrap').empty().append(videoTemplate(data));
 			$('#main').empty().append(mainTemplate(data));		
 		 }
 
@@ -579,7 +646,7 @@
 			$('#owl').owlCarousel({
 				autoPlay: 3000, //Set AutoPlay to 3 seconds
 				navigation : true, // Show next and prev buttons
-				slideSpeed : 300,
+				slideSpeed : 400,
 				paginationSpeed : 400,
 				singleItem : true,
 				navigation : true,
@@ -589,20 +656,24 @@
 
 
 			function afterAction(){
-				$('#explain').empty();
-				$('#explain').append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>");
+				var owl = this;
+				$('#explain').fadeOut(200,function(){
+					$(this).empty().append("<p>" + data["featureImage"+owl.owl.currentItem] + "</p>").fadeIn(200);
+				});
+				//.empty().append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>").fadeIn();
+				//$('#explain').append("<p>" + data["featureImage"+this.owl.currentItem] + "</p>");
 			}
 		 }
-		
-		$(document).ready( function() {
-			Handlebars.registerHelper('toUpperCase', function(str) {
-				if(str && typeof str ==='string'){
-	  				return str.toUpperCase();
-	  			}else{
-	  				return '';
-	  			}
-			});
 
+		 Handlebars.registerHelper('toUpperCase', function(str) {
+			if(str && typeof str ==='string'){
+	  			return str.toUpperCase();
+	  		}else{
+	  			return '';
+	  		}
+		});
+		
+		$(document).ready( function() {	
 			var userLang = navigator.language || navigator.userLanguage; 
 			userLang = userLang.substring(0,userLang.indexOf('-'));
 			setup(userLang);

@@ -84,6 +84,7 @@ body {
 	.panel-footer p {
 		font-size: 10px;
 	}
+	
 }
 
 @media ( max-width :767px) {
@@ -96,6 +97,7 @@ body {
 }
 
 @media ( min-width :1200px) {
+
 }
 
 .jumbotron dt {
@@ -129,11 +131,6 @@ body {
 	width: auto;
 }
 
-.videotron {
-	padding=0px;
-}
-
-
 ul.hidden {
     display: none;
 }
@@ -155,20 +152,44 @@ ul.hidden {
 	text-align: center;
 }
 
-.transparent{
-	border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.40);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+.video_background{
+	position:relative;
+	z-index: 0;
 }
 
-.hover{
-	background-color: rgba(0,0,0,0);
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: inline-block;
 }
 
-.hover:hover{
-	background-color: #777;
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: inline-block;
+}
+
+.overlay > div{
+	position: relative;
+	left: 70%;
+    top: 50%;
+}
+
+.overlay h1 {
+	font-size: 100px;
+	color:white;
+}
+
+.overlay h3 {
+	/*font-size: 60px;*/
+	color:white;
+}
+
+.margin-top > div {
+	margin-bottom: 26px;
 }
