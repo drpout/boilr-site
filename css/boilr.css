@@ -16,11 +16,14 @@ div.main {
 	font-weight: bold
 }
 
-.navbar-inner img {
+.navbar-brand > img {
 	max-width: 40px;
 	height: auto;
 	width: auto;
 	margin-top: -10px;
+}
+.navbar-brand > p {
+	color: white;
 }
 
 body {
@@ -28,7 +31,7 @@ body {
     background-repeat: repeat;
 }
 
-.jumbotron{
+.jumbotron {
 	background-color: rgba(255, 255, 255, 0.439);
 }
 
@@ -38,10 +41,6 @@ body {
 	max-width: 100%;
 	width: auto;
 }
-
-/* .row div { */
-/* 	padding-bottom: 2em; */
-/* } */
 
 .jumbotron h1 {
 	font-size: 40px;
@@ -194,6 +193,3 @@ ul.hidden {
 	margin-bottom: 26px;
 }
 
-.navbar-brand > p {
-	color: white;
-}
