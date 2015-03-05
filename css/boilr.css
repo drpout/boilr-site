@@ -193,3 +193,7 @@ ul.hidden {
 .margin-top > div {
 	margin-bottom: 26px;
 }
+
+.navbar-brand > p {
+	color: white;
+}
