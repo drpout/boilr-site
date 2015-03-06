@@ -2,40 +2,36 @@ div.main {
 		padding-top: 30px;
 	}
 
-.logo{
-	
+.navbar-brand > img {
+	max-width: 24px;
+	vertical-align:middle;
+	float:left;
 }
 
-.logo p{
-	
-}
-
-.navbar-brand > a{
-	position:relative;
-}
-
-.navbar-brand > p{
+.navbar-brand > span{
 	padding-left:10px;
 	float:left;
-	font-size: 28px;
-	font-weight: bold
-}
-
-.navbar-brand > img {
-	max-width: 36px;
-	height: auto;
-	width: auto;
-	margin-top: -8px;
-	float:left;
-}
-.navbar-brand > p {
+	font-size: 24px;
+	font-weight: bold;
 	color: white;
+	line-height: 24px;
+	vertical-align:middle;
 }
 
 .navbar .image-clip {
 	max-height: 18px;
 	height: auto;
 	width: auto;
+}
+
+.social > li > a{
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+.social> li.dropdown > a{
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 body {
