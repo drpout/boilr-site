@@ -3,13 +3,18 @@ div.main {
 	}
 
 .logo{
+	
+}
+
+.logo p{
+	
+}
+
+.navbar-brand > a{
 	position:relative;
 }
 
-.logo img{
-	float:left;
-}
-.logo p{
+.navbar-brand > p{
 	padding-left:10px;
 	float:left;
 	font-size: 28px;
@@ -17,13 +22,20 @@ div.main {
 }
 
 .navbar-brand > img {
-	max-width: 40px;
+	max-width: 36px;
 	height: auto;
 	width: auto;
-	margin-top: -10px;
+	margin-top: -8px;
+	float:left;
 }
 .navbar-brand > p {
 	color: white;
+}
+
+.navbar .image-clip {
+	max-height: 18px;
+	height: auto;
+	width: auto;
 }
 
 body {
@@ -124,11 +136,7 @@ body {
 	border-radius: 15px;
 }
 
-.navbar .image-clip {
-	max-height: 26px;
-	height: auto;
-	width: auto;
-}
+
 
 ul.hidden {
     display: none;
@@ -151,6 +159,12 @@ ul.hidden {
 	}
 }
 
+@media(max-height: 1366px ){
+	#owl .item img{
+		max-height: 1200px;
+	}
+}
+
 @media(max-height: 1280px ){
 	#owl .item img{
 		max-height: 980px;
@@ -160,6 +174,12 @@ ul.hidden {
 @media(max-height: 900px ){
 	#owl .item img{
 		max-height: 600px;
+	}
+}
+
+@media(max-height: 700px ){
+	#owl .item img{
+		max-height: 400px;
 	}
 }
 
@@ -174,27 +194,6 @@ ul.hidden {
 		max-height: 180px;
 	}
 }
-
-
-
-
-/*@media(max-width: 980px ){
-	#owl .item img{
-		width: 300px;
-	}
-}
-
-@media(max-width: 1280px ){
-	#owl .item img{
-		width: 300px;
-	}
-}*/
-
-/*@media(max-height: 800px ){
-	#owl .item img{
-		height: 500px;
-	}
-}*/
 
 .owl-carousel .owl-wrapper-outer  {
 	padding-bottom: 2em;
@@ -216,82 +215,56 @@ ul.hidden {
 
 .overlay > div {
 		position: relative;
-		left: 70%;
+		left: 0;
 	    top: 50%;
+	    display: inline-block;
 }
 
 .overlay h1 {
-	font-size: 100px;
+	font-size: 25px;
 	color:white;
 }
 
-@media ( max-width: 768px) {
+@media ( min-width: 500px) {
 	.overlay > div {
-		position: relative;
-		left: 10%;
-	    top: 50%;
+		left: 15%;
 	}
-
 	.overlay h1 {
-		font-size: 20px;
-		color:white;
+		font-size: 25px;
 	}
 }
 
-@media ( max-width: 360px) {
+@media ( min-width: 700px) {
 	.overlay > div {
-		position: relative;
-		left: 0;
-	    top: 50%;
+		left: 50%;
+	    
 	}
-	
+
 	.overlay h1 {
-		font-size: 20px;
-		color:white;
+		font-size: 30px;
 	}
 }
 
-@media ( max-width: 1590px) {
+@media ( min-width: 1000px) {
 	.overlay > div {
-		position: relative;
 		left: 60%;
-	    top: 50%;
 	}
-	
+
 	.overlay h1 {
-		font-size: 100px;
-		color:white;
+		font-size: 35px;
 	}
 }
 
-@media ( max-width: 1200px) {
-	.overlay > div {
-		position: relative;
-		left: 50%;
-	    top: 50%;
-	}
-	
-	.overlay h1 {
-		font-size: 100px;
-		color:white;
+@media( min-height: 500px){
+	.overlay > div {		
+	    top: 70%;
 	}
 }
 
-
-/*@media ( max-width: 1590px) {
-	.overlay > div {
-		position: relative;
-		left: 50%;
-	    top: 50%;
+@media( min-height: 1000px){
+	.overlay > div {		
+	    top: 80%;
 	}
-}
-
-@media ( min-width :1590px) {
-}
-*/
-.overlay h3 {
-	/*font-size: 60px;*/
-	color:white;
 }
 
 .margin-top > div {

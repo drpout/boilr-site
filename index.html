@@ -29,7 +29,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<div class="navbar-inner">
-				<a class="navbar-brand logo hover" href="#video-wrap" rel="home">
+				<a class="navbar-brand" href="#video-wrap" rel="home">
 					<img src="img/icon-boilr.png"/>
 					<p>Boilr</p>
 				</a>
@@ -97,14 +97,14 @@
 			</div>-->
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
-				<h3>Boilr is alive. Subscribe our newsletter!</h3>
+				<h1>Subscribe our newsletter!</h1>
 				<form class="form-inline">
 					<div class="form-group">
 		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
 		  			</div>	
-		  			<button type="submit" class="btn btn-default">Sign up</button>
+		  			<button type="submit" class="btn btn-default">Subscribe</button>
 		  		</form>
-	  		<div
+	  		</div>
 		</div>
 </script>
 
@@ -735,6 +735,8 @@
 			var userLang = navigator.language || navigator.userLanguage; 
 			userLang = userLang.substring(0,userLang.indexOf('-'));
 			setup(userLang);
+
+			console.log(window.innerHeight);
 		});		
 	</script>
 </body>
