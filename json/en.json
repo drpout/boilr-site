@@ -29,7 +29,14 @@
 	"chinese" : "Chinese",
 
 	"featureImage0" : "Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.",
-	"featureImage1" : "Feature Image 1",
-	"featureImage2" : "Feature Image 2",
-	"featureImage3" : "Feature Image 3"
+	"featureImage1" : "It supports 2 alarm types: Price Hit Triggered when price crosses the alarm's upper or lower limit.",
+	"featureImage2" : "Price Change Triggered when price changes more than X amount (in currency or percentage) in a specified time frame (e.g. 15 min). It uses a rolling time frame: price is fetched with a given update interval (e.g. 30 s) and compared with the price fetched one time frame ago (e.g. 15 min ago).",
+	"featureImage3":"",
+	"featureImage4":"Sound and vibration are configurable globally and individually for each alarm.",
+	"featureImage5":"Delete alarms with a swipe.",
+	"featureImage6":"Reorder alarms after a long click.",
+	"featureImage7":"Lists of exchanges, pairs and alarms are fully searchable, allowing a quick alarm setup and configuration.",
+	"featureImage8":"Market data is retrieved directly from the exchanges using Wi-Fi or Mobile Data (if allowed). Boilr supports all exchanges available on libdynticker, and all their pairs.",
+	"featureImage9":"Supports multiple languages, including english, chinese and german.",
+	"featureImage10":"Alternative white theme."
 }
