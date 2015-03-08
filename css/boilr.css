@@ -272,6 +272,10 @@ ul.hidden {
 	padding-bottom: 0px;
 }
 
+#explain > p{
+	margin-top: 10%;
+}
+
 
 /*.row{
     height: 100%;
