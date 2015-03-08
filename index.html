@@ -28,15 +28,15 @@
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span>
 			</button>
-			<div class="navbar-inner page-nav">
-					<a class="navbar-brand" href="#video-wrap" rel="home">
+			<div class="navbar-inner">
+					<a class="navbar-brand " href="#video-wrap" rel="home">
 						<img src="img/icon-boilr.png"/>
 						<span>Boilr</span>
 					</a>
 			</div>
 		</div>
 		<div class="navbar-collapse collapse">
-			<ul id="nav" class="nav navbar-nav page-nav">
+			<ul id="nav" class="nav navbar-nav">
 				<li><a href="#features">{{features}}</a></li>
 				<li><a href="#supported">{{supported}}</a></li>
 				<li><a href="#download">{{download}}</a></li>
@@ -45,32 +45,32 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right social">
 				<li>
-					<a id="email-link" href="javascript:void(0);">
+					<a class="external" id="email-link" href="javascript:void(0);">
 						<img class="image-clip" src="img/icon-envelope-3.png" />
 					</a>
 				</li>
 				<li>
-					<a href="https://plus.google.com/107236041248948193283" rel="publisher" target="_blank">
+					<a class="external" href="https://plus.google.com/107236041248948193283" rel="publisher" target="_blank">
 						<img class="image-clip" src="img/icon-google.png">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/boilr" target="_blank">
+					<a class="external" href="https://www.facebook.com/boilr" target="_blank">
 						<img class="image-clip" src="img/icon-facebook.png">
 					</a>
 				</li>
 				<li>
-					<a href="https://twitter.com/boilrapp" target="_blank">
+					<a  class="external" href="https://twitter.com/boilrapp" target="_blank">
 						<img class="image-clip" src="img/icon-twitter.png">
 					</a>
 				</li>
 				<li>
-					<a href="https://www.reddit.com/r/Boilr" target="_blank">
+					<a class="external" href="https://www.reddit.com/r/Boilr" target="_blank">
 						<img class="image-clip" src="img/icon-reddit.png">
 					</a>
 				</li>
 				<li class="dropdown">
-          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{language}} <span class="caret"></span></a>
+          			<a href="#" class="dropdown-toggle external" data-toggle="dropdown" role="button" aria-expanded="false">{{language}} <span class="caret"></span></a>
           			<ul class="dropdown-menu" role="menu">
 	            		<li><a class="language" id="en" href="#video-wrap">{{english}}</a></li>
 	            		<li><a class="language" id="zn" href="#video-wrap">{{chinese}}</a></li>
@@ -330,9 +330,9 @@
 				<span class="icon-bar"></span>
 			</button>
 			<div class="navbar-inner">
-				<a class="navbar-brand logo hover" href="#video-wrap" rel="home">
+				<a class="navbar-brand" href="#video-wrap" rel="home">
 				<img src="img/icon-boilr.png"/>
-				<p>Boilr</p>
+				<span>Boilr</span>
 				</a>
 			</div>
 		</div>
@@ -341,8 +341,7 @@
 				<li><a href="#features">Features</a></li>
 				<li><a href="#supported">Supported</a></li>
 				<li><a href="#download">Download</a></li>
-				<li><a href="#donate">Download</a></li>
-				<li><a href="#similar">Similar</a></li>
+				<li><a href="#donate">Donate</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<!-- <li><a id="email-link" href="javascript:void(0);"> <img
@@ -377,14 +376,21 @@
 	</video>
 
 	<div class="overlay">
-		<h1 for="exampleInputEmail1">Newsletter</h1>
-		<form class="form-inline">
-			<div class="form-group">
-    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-  			</div>	
-  			<button type="submit" class="btn btn-default">Send invitation</button>
-  		</form>
-	</div>
+			<!--<div>
+				<h1>Boilr</h1>
+				<h3></h3>
+			</div>-->
+			<div>
+				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
+				<h1>Subscribe our newsletter!</h1>
+				<form class="form-inline">
+					<div class="form-group">
+		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		  			</div>	
+		  			<button type="submit" class="btn btn-default">Subscribe</button>
+		  		</form>
+	  		</div>
+		</div>
 </div>
 
 
@@ -598,44 +604,52 @@
 			});
 
 		function setupLanguage(data){
-			var navTemplate = $("#nav-template").html();
 			var videoTemplate = $('#video-template').html();
-			var mainTemplate = $("#main-template").html();
-			
-			navTemplate = Handlebars.compile(navTemplate);
 			videoTemplate = Handlebars.compile(videoTemplate);
-			mainTemplate = Handlebars.compile(mainTemplate);
-
-			$('#navbar').empty().append(navTemplate(data));
 			$('#video-wrap').empty().append(videoTemplate(data));
-			$('#main').empty().append(mainTemplate(data));		
+			var navTemplate = $("#nav-template").html();
+			navTemplate = Handlebars.compile(navTemplate);
+			$('#navbar').empty().append(navTemplate(data));
+			var mainTemplate = $("#main-template").html();
+			mainTemplate = Handlebars.compile(mainTemplate);
+			$('#main').empty().append(mainTemplate(data));
 		 }
 
 		 function setupSite(data){
 		 	var url = window.location.href;
 			if(url.indexOf("#video-wrap") > -1 || url.indexOf("#") === -1 ){
-				$('#navbar').fadeTo(0,0.6);
+				$('#navbar').fadeTo(0,fade);
 			}
 
-			$('.page-nav').onePageNav({
+			var owl = $('#owl');
+			$('#navbar').onePageNav({
 				currentClass : 'active',
 				changeHash : true,
 				filter : ':not(.external)',
 				scrollThreshold : 0.5,
 				scrollChange: function (nav){
+					console.log("asdasd");
+					console.log($(nav).find('a')[0]['hash']);
 					if($(nav).find('a').attr('href') ==='#video-wrap'){
 						$('#navbar').fadeTo(400,fade);
 					}else{
+						if($(nav).find('a')[0]['hash'] ==='#features'){
+							owl.trigger("owl.jumpTo",0);
+						}
 						$('#navbar').fadeTo(400,1);
 					}
 				}
 			});
 			
-			$('#nav li').click(function(){
+			$('#nav li a').click(function(){
+				console.log($(this)[0]["hash"]);
+				if($(this)[0]["hash"] ==="#features"){
+					owl.trigger("owl.jumpTo",0);
+				}
 				$('#navbar').fadeTo(400,1);
 			});
 			
-			$('.navbar-brand').click(function(){
+			$('.navbar-inner ').click(function(){
 				$('#navbar').fadeTo(400,fade);
 			});
 
@@ -698,7 +712,7 @@
 			    }
 			});
 		
-			$('#owl').owlCarousel({
+			owl.owlCarousel({
 				autoPlay: 5000, //Set AutoPlay to 3 seconds
 				navigation : true, // Show next and prev buttons
 				slideSpeed : 400,
@@ -732,6 +746,7 @@
 	  			return str;
 	  		}
 		});
+
 		
 		$(document).ready( function() {	
 			var userLang = navigator.language || navigator.userLanguage; 
