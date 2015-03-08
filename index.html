@@ -709,6 +709,11 @@
 				afterAction : afterAction
 			});
 
+			var innerHeight = window.innerHeight*2/3;
+			console.log(innerHeight);
+
+			$('#owl .item img').css("max-height", innerHeight);
+			//$('#owl .item img').css("max-height", window.innerHeight);
 
 			function afterAction(){
 				var owl = this;
