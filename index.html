@@ -38,8 +38,8 @@
 		<div class="navbar-collapse collapse">
 			<ul id="nav" class="nav navbar-nav">
 				<li><a href="#features">{{features}}</a></li>
-				<li><a href="#supported">{{supported}}</a></li>
 				<li><a href="#download">{{download}}</a></li>
+				<li><a href="#supported">{{supported}}</a></li>
 				<li><a href="#donate">{{donate}}</a></li>
 				<!--<li><a href="#similar">{{similar}}</a></li>-->
 			</ul>
@@ -83,19 +83,12 @@
 </script>
 
 <script id="video-template" type="text/x-handlebars-template">
-		<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
-			loop="loop" muted>
+		<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
 			<source src="video/preview.webm" type="video/webm">
 			<source src="video/preview.ogg" type="video/ogg">
 			<source src="video/preview.mp4" type="video/mp4">
-			<!--<img src="/images/product/product-parent-hero.jpg" title="Your browser does not support the <video> tag">-->
 		</video>
-
 		<div class="overlay">
-			<!--<div>
-				<h1>Boilr</h1>
-				<h3></h3>
-			</div>-->
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
 				<h1>{{subscribeOurNewsletter}}</h1>
@@ -113,7 +106,7 @@
 	<div class="jumbotron" id="features">
 		<h1 class="translate">{{features}}</h1>
 		<div class="row">
-			<div class="col-lg-6 col-sm-6 col-xs-6" id="frame">
+			<div class="col-lg-6 col-sm-6 col-xs-12" id="frame">
 				<div id="owl">
 					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/alarm-list.png" />
@@ -150,7 +143,10 @@
 					</div>
 				</div>
 			</div> 	
-			<div id="explain" class="col-lg-6 col-sm-6 col-xs-6">
+			<div id="explain" class="col-lg-3 col-sm-2 col-xs-12">
+			<p></p>
+			</div>
+			<div id="explain" class="col-lg-3 col-sm-4 col-xs-12">
 			</div>
 		</div>
 	</div>
@@ -159,59 +155,6 @@
 		<h1>{{inAction}}</h1>
 		<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 	</div>-->
-	
-	<div class="jumbotron" id="supported">
-		<h1>{{supported}}</h1>
-		<div class="row">
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>796 Exchange</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Allcoin</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>ANX</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Atomic Trade</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BitBay</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bitcoin.de</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bitcurex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bitfinex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BitMarket.pl</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bitspark</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bitstamp</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Bittrex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BleuTrade</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTC100</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTC38</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTC China</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTC Markets</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTC-E</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BtcTrade</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BTER</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>BullionVault</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>CampBX</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Cavirtex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>C-CEX</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>CCEDK</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>CEX.IO</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>CHBTC</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Cryptonit</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Cryptsy</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Coinbase</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>CoinMkt</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Coin-Swap</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Coins-E</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>HitBTC</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Huobi</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>itBit</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Kraken</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>LakeBTC</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>LocalBitcoins</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Melotic</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Mulcoin</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>OKCoin</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>OneWorldCoin</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Paymium</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Poloniex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Vircurex</h3></div>
-			<div class="col-md-2 col-sm-3 col-xs-6"><h3>Yunbi</h3></div>
-		</div>
-	</div>
 
 	<div class="jumbotron" id="download">
 		<h1>{{downloadAndFork}}</h1>
@@ -256,6 +199,60 @@
 						class="btn btn-default sharp">GitHub</a>
 				</p>
 			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="supported">
+		<h1>{{supportedExchanges}}</h1>
+		</br>
+		<div class="row">
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>796 Exchange</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Allcoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>ANX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Atomic Trade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BitBay</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitcoin.de</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitcurex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitfinex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BitMarket.pl</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitspark</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitstamp</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bittrex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BleuTrade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC100</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC38</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC China</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC Markets</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC-E</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BtcTrade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTER</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BullionVault</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CampBX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cavirtex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>C-CEX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CCEDK</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CEX.IO</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CHBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cryptonit</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cryptsy</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coinbase</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CoinMkt</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coin-Swap</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coins-E</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>HitBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Huobi</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>itBit</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Kraken</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>LakeBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>LocalBitcoins</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Melotic</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Mulcoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>OKCoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>OneWorldCoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Paymium</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Poloniex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Vircurex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Yunbi</p></div>
 		</div>
 	</div>
 
@@ -341,15 +338,11 @@
 		<div class="navbar-collapse collapse">
 			<ul id="nav" class="nav navbar-nav ">
 				<li><a href="#features">Features</a></li>
-				<li><a href="#supported">Supported</a></li>
 				<li><a href="#download">Download</a></li>
+				<li><a href="#supported">Supported</a></li>
 				<li><a href="#donate">Donate</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<!-- <li><a id="email-link" href="javascript:void(0);"> <img
-						class="image-clip hover" src="img/icon-envelope-3.png" />
-						<p id="email-link-text" class="text-center sub-title">Please enable JavaScript</p>
-				</a></li> -->
 				<li><a href="https://plus.google.com/107236041248948193283"
 					rel="publisher" target="_blank"> <img class="image-clip hover"
 						src="img/icon-google.png"></a></li>
@@ -367,21 +360,8 @@
 	</div>
 </div>
 
-
 <div id="video-wrap" class="video-wrap">
-	<video id="video_background" class="video_background" preload="auto" autoplay="autoplay"
-		loop="loop" muted>
-		<source src="video/preview.webm" type="video/webm">
-		<source src="video/preview.ogg" type="video/ogg">
-		<source src="video/preview.mp4" type="video/mp4">
-		<!-- <img src="img/screenshots/alarm-firing.png" title="Your browser does not support the <video> tag"> -->
-	</video>
-
 	<div class="overlay">
-			<!--<div>
-				<h1>Boilr</h1>
-				<h3></h3>
-			</div>-->
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
 				<h1>Subscribe our newsletter!</h1>
@@ -462,10 +442,6 @@
 		<h1>{{inAction}}</h1>
 		<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
 	</div>-->
-	
-	<div class="jumbotron" id="supported">
-		<h1>Supported</h1>
-	</div>
 
 	<div class="jumbotron" id="download">
 		<h1>Download and Fork</h1>
@@ -513,6 +489,60 @@
 		</div>
 	</div>
 
+	<div class="jumbotron" id="supported">
+		<h1>Supported exchanges</h1>
+		</br>
+		<div class="row">
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>796 Exchange</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Allcoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>ANX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Atomic Trade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BitBay</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitcoin.de</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitcurex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitfinex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BitMarket.pl</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitspark</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bitstamp</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Bittrex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BleuTrade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC100</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC38</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC China</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC Markets</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTC-E</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BtcTrade</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BTER</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>BullionVault</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CampBX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cavirtex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>C-CEX</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CCEDK</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CEX.IO</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CHBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cryptonit</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Cryptsy</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coinbase</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>CoinMkt</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coin-Swap</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Coins-E</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>HitBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Huobi</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>itBit</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Kraken</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>LakeBTC</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>LocalBitcoins</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Melotic</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Mulcoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>OKCoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>OneWorldCoin</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Paymium</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Poloniex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Vircurex</p></div>
+			<div class="col-md-2 col-sm-3 col-xs-6"><p>Yunbi</p></div>
+		</div>
+	</div>
+
 	<div class="jumbotron" id="donate">
 		<h1>Donate or Tip</h1>
 		<p>Boilr is <a href="https://www.gnu.org/copyleft/gpl.html"
@@ -549,28 +579,22 @@
 		</div>
 	</div>
 
-
-<!-- <div class="jumbotron" id="similar">
-		<h1>Similar</h1>
+	<div class="panel-footer">
+		<p>Original F-Droid logo by William Theaker and Robert Martinez.
+				Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
+				Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
+				Reddit icon by <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
+				<br/>
+				Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
+				<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+				Boilr icon by <a href="http://cargocollective.com/algazarra/index" target="_blank">Ricardo Duarte</a>.
+				All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
+				<br />
+				Website source-code is available <a href="https://github.com/andrefbsantos/boilr-site" target="_blank"> github.com/andrefbsantos/boilr-site</a>.
+				Licensed under <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+		</p>
+	</div>
 </div>
- -->
-<div class="panel-footer">
-	<p>Original F-Droid logo by William Theaker and Robert Martinez.
-			Bitcoin logo by <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
-			Envelope icon by <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
-			Reddit icon by <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
-			<br/>
-			Modifed version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
-			<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-			Boilr icon by <a href="http://cargocollective.com/algazarra/index" target="_blank">Ricardo Duarte</a>.
-			All licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
-			<br />
-			Website source-code is available <a href="https://github.com/andrefbsantos/boilr-site" target="_blank"> github.com/andrefbsantos/boilr-site</a>.
-			Licensed under <a href="https://github.com/andrefbsantos/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
-	</p>
-</div>
-</div>
-
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -597,12 +621,26 @@
 		}
 		
 		function setupLanguage(data){
+			
 			var videoTemplate = $('#video-template').html();
 			videoTemplate = Handlebars.compile(videoTemplate);
 			$('#video-wrap').empty().append(videoTemplate(data));
+			
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+				// $('#video-wrap').empty().append("<img id=\"video_background\" src=\"img/screenshots/alarm-list.png\">");
+			}else{
+				$('#video_background').attr('autoplay','autoplay');
+				$('#video_background').attr('preload','auto');
+			}
+
+			// var overlayTemplate = $('#overlay-template').html();
+			// overlayTemplate = Handlebars.compile(overlayTemplate);
+			// $('#video-wrap').append(overlayTemplate(data));
+			
 			var navTemplate = $("#nav-template").html();
 			navTemplate = Handlebars.compile(navTemplate);
 			$('#navbar').empty().append(navTemplate(data));
+			
 			var mainTemplate = $("#main-template").html();
 			mainTemplate = Handlebars.compile(mainTemplate);
 			$('#main').empty().append(mainTemplate(data));
@@ -656,7 +694,7 @@
 			});
 
 			var ua = navigator.userAgent.toLowerCase();
-			if (ua.indexOf("android") > -1) {
+			if(ua.indexOf("android") > -1){
 				$('#fdroid-link').attr('href', 'fdroid.app:mobi.boilr.boilr');
 				$('#play-link').attr('href', 'market://details?id=mobi.boilr.boilr');
 			}
@@ -704,24 +742,38 @@
 			    }
 			});
 		
-			owl.owlCarousel({
-				autoPlay: 6000, //Set AutoPlay to 3 seconds
-				navigation : true, // Show next and prev buttons
-				slideSpeed : 400,
-				paginationSpeed : 300,
-				singleItem : true,
-				navigation : true,
-				lazyLoad : true,
-				afterAction : afterAction
-			});
-
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+				owl.owlCarousel({
+					autoPlay: 6000, //Set AutoPlay to 3 seconds
+					navigation : false, // Show next and prev buttons
+					slideSpeed : 400,
+					paginationSpeed : 300,
+					singleItem : true,
+					navigation : false,
+					lazyLoad : true,
+					afterAction : afterAction
+				});
+				$('div.owl-controls').css('display','none');
+				$('#explain > p').css("margin-top","0px");
+			} else {
+				owl.owlCarousel({
+					autoPlay: 6000, //Set AutoPlay to 3 seconds
+					navigation : true, // Show next and prev buttons
+					slideSpeed : 400,
+					paginationSpeed : 300,
+					singleItem : true,
+					navigation : false,
+					lazyLoad : true,
+					afterAction : afterAction
+				});
+			}
 			var innerHeight = window.innerHeight*3/4;
 			$('#owl .item img').css("max-height", innerHeight);
 
 			function afterAction(){
 				var owl = this;
-				$('#explain').fadeOut(200,function(){
-					$(this).empty().append("<p>" + data["featureImage"+owl.owl.currentItem] + "</p>").fadeIn(200);
+				$('#explain > p').fadeOut(200,function(){
+					$(this).empty().append(data["featureImage"+owl.owl.currentItem]).fadeIn(200);
 				});
 			}
 		 }
@@ -745,7 +797,6 @@
   			} 
 		}
 
-		
 		$(document).ready( function() {	
 			var userLang = getQueryVariable("lang");
 			userLang = userLang==""
