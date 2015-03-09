@@ -72,8 +72,9 @@
 				<li class="dropdown">
           			<a href="#" class="dropdown-toggle external" data-toggle="dropdown" role="button" aria-expanded="false">{{language}} <span class="caret"></span></a>
           			<ul class="dropdown-menu" role="menu">
-	            		<li><a class="language" id="en" href="#video-wrap">{{english}}</a></li>
-	            		<li><a class="language" id="zn" href="#video-wrap">{{chinese}}</a></li>
+	            		<li><a href="/?lang=en">{{english}}</a></li>
+	            		<li><a href="/?lang=zn">{{chinese}}</a></li>
+	            		<li><a href="/?lang=cs">{{czech}}</a></li>
           			</ul>
         		</li>
 			</ul>
@@ -97,12 +98,12 @@
 			</div>-->
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
-				<h1>Subscribe our newsletter!</h1>
+				<h1>{{subscribeOurNewsletter}}</h1>
 				<form class="form-inline">
 					<div class="form-group">
-		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{enterEmail}}">
 		  			</div>	
-		  			<button type="submit" class="btn btn-default">Subscribe</button>
+		  			<button type="submit" class="btn btn-default">{{subscribe}}</button>
 		  		</form>
 	  		</div>
 		</div>
@@ -124,7 +125,7 @@
 						<img class="lazyOwl" data-src="img/screenshots/change-creation.png" />
 					</div>
 					<div class="item">
-						<img class="lazyOwl" data-src="img/screenshots/change-firing.png" />
+						<img class="lazyOwl" data-src="img/screenshots/hit-firing.png" />
 					</div>
 					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/app-settings.png" />
@@ -587,24 +588,19 @@
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		var fade = 0.5;
 		function setup(userLang){
-				var strings = "json/"+userLang+".json"
-				$.getJSON(strings, function(data) {
+			var strings = "json/"+userLang+".json"
+			$.getJSON(strings, function(data) {
+				setupLanguage(data);
+				setupSite(data);
+			}).fail(function(){
+				//Back to english
+				$.getJSON("json/en.json", function(data) {
 					setupLanguage(data);
-					setupSite(data);
-				}).fail(function(){
-					//Back to english
-					$.getJSON("json/en.json", function(data) {
-						setupLanguage(data);
-			 			setupSite(data);
-					});
-				});	
-			}
-
-			$('body').on('click','.language',function(event){
-				setup($(this).attr('id'));
-				
-			});
-
+		 			setupSite(data);
+				});
+			});	
+		}
+		
 		function setupLanguage(data){
 			var videoTemplate = $('#video-template').html();
 			videoTemplate = Handlebars.compile(videoTemplate);
@@ -715,7 +711,7 @@
 			});
 		
 			owl.owlCarousel({
-				autoPlay: 5000, //Set AutoPlay to 3 seconds
+				autoPlay: 6000, //Set AutoPlay to 3 seconds
 				navigation : true, // Show next and prev buttons
 				slideSpeed : 400,
 				paginationSpeed : 300,
@@ -725,11 +721,8 @@
 				afterAction : afterAction
 			});
 
-			var innerHeight = window.innerHeight*2/3;
-			console.log(innerHeight);
-
+			var innerHeight = window.innerHeight*3/4;
 			$('#owl .item img').css("max-height", innerHeight);
-			//$('#owl .item img').css("max-height", window.innerHeight);
 
 			function afterAction(){
 				var owl = this;
@@ -749,10 +742,22 @@
 	  		}
 		});
 
+		function getQueryVariable(variable) {
+ 			var query = window.location.search.substring(1);
+  			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+    			var pair = vars[i].split("=");
+    			if (pair[0] == variable) {
+      				return pair[1];
+    			}
+  			} 
+		}
+
 		
 		$(document).ready( function() {	
-			var userLang = navigator.language || navigator.userLanguage; 
-			userLang = userLang.substring(0,userLang.indexOf('-'));
+			//var userLang = navigator.language || navigator.userLanguage; 
+			//userLang = userLang.substring(0,userLang.indexOf('-'));
+			var userLang = getQueryVariable("lang");
 			setup(userLang);
 		});		
 	</script>
