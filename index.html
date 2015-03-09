@@ -72,8 +72,8 @@
 				<li class="dropdown">
           			<a href="#" class="dropdown-toggle external" data-toggle="dropdown" role="button" aria-expanded="false">{{language}} <span class="caret"></span></a>
           			<ul class="dropdown-menu" role="menu">
-	            		<li><a class="language" id="en" href="#video-wrap">{{english}}</a></li>
-	            		<li><a class="language" id="zn" href="#video-wrap">{{chinese}}</a></li>
+	            		<li><a href="/?lang=en">{{english}}</a></li>
+	            		<li><a href="/?lang=zn">{{chinese}}</a></li>
           			</ul>
         		</li>
 			</ul>
@@ -587,24 +587,19 @@
 		//https://github.com/davist11/jQuery-One-Page-Nav
 		var fade = 0.5;
 		function setup(userLang){
-				var strings = "json/"+userLang+".json"
-				$.getJSON(strings, function(data) {
+			var strings = "json/"+userLang+".json"
+			$.getJSON(strings, function(data) {
+				setupLanguage(data);
+				setupSite(data);
+			}).fail(function(){
+				//Back to english
+				$.getJSON("json/en.json", function(data) {
 					setupLanguage(data);
-					setupSite(data);
-				}).fail(function(){
-					//Back to english
-					$.getJSON("json/en.json", function(data) {
-						setupLanguage(data);
-			 			setupSite(data);
-					});
-				});	
-			}
-
-			$('body').on('click','.language',function(event){
-				setup($(this).attr('id'));
-				
-			});
-
+		 			setupSite(data);
+				});
+			});	
+		}
+		
 		function setupLanguage(data){
 			var videoTemplate = $('#video-template').html();
 			videoTemplate = Handlebars.compile(videoTemplate);
@@ -748,10 +743,22 @@
 	  		}
 		});
 
+		function getQueryVariable(variable) {
+ 			var query = window.location.search.substring(1);
+  			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+    			var pair = vars[i].split("=");
+    			if (pair[0] == variable) {
+      				return pair[1];
+    			}
+  			} 
+		}
+
 		
 		$(document).ready( function() {	
-			var userLang = navigator.language || navigator.userLanguage; 
-			userLang = userLang.substring(0,userLang.indexOf('-'));
+			//var userLang = navigator.language || navigator.userLanguage; 
+			//userLang = userLang.substring(0,userLang.indexOf('-'));
+			var userLang = getQueryVariable("lang");
 			setup(userLang);
 		});		
 	</script>
