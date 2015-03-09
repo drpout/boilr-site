@@ -91,7 +91,6 @@ body {
 	.panel-footer p {
 		font-size: 10px;
 	}
-	
 }
 
 @media ( max-width :767px) {
@@ -259,11 +258,6 @@ ul.hidden {
 	margin-bottom: 26px;
 }
 
-/*#frame{
-	padding-left: 0px;
-	padding-right: 0px;
-}*/
-
 .owl-carousel .owl-wrapper-outer {
 	background-image: url("../img/frame-tiled-small.png");
     background-repeat: no-repeat;
@@ -273,55 +267,5 @@ ul.hidden {
 }
 
 #explain > p{
-	margin-top: 25%;
+	margin-top: 20%;
 }
-
-
-/*.row{
-    height: 100%;
-    width: 100%;
-}
-
-#frame{
-	display: inline-block;
-    height: 100%;
-    width: 100%;
-}
-
-.owl-carousel{
-	display: inline-block;
-    height: 100%;
-    width: 100%;
-}*/
-
-/*.owl-wrapper-outer {
-	display: inline-block;
-    height: 100%;
-}
-
-.owl-wrapper{
-	display: inline-block;
-    height: 100%;
-}
-
-.owl-item{
-	display: inline-block;
-    height: 100%;
-}
-
-.owl-item > img{
-	max-height: 100%;
-	width: auto;
-}*/
-
-
-/*#owl{
-	display: inline-block;
-    height: 100%;
-    width: 100%;
-}
-
-.owl-wrapper-outer{
-	display: inline-block;
-    height: 100%;
-}*/
