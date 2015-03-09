@@ -74,6 +74,7 @@
           			<ul class="dropdown-menu" role="menu">
 	            		<li><a href="/?lang=en">{{english}}</a></li>
 	            		<li><a href="/?lang=zn">{{chinese}}</a></li>
+	            		<li><a href="/?lang=cs">{{czech}}</a></li>
           			</ul>
         		</li>
 			</ul>
@@ -97,12 +98,12 @@
 			</div>-->
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
-				<h1>Subscribe our newsletter!</h1>
+				<h1>{{subscribeOurNewsletter}}</h1>
 				<form class="form-inline">
 					<div class="form-group">
-		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{enterEmail}}">
 		  			</div>	
-		  			<button type="submit" class="btn btn-default">Subscribe</button>
+		  			<button type="submit" class="btn btn-default">{{subscribe}}</button>
 		  		</form>
 	  		</div>
 		</div>
@@ -710,7 +711,7 @@
 			});
 		
 			owl.owlCarousel({
-				autoPlay: 5000, //Set AutoPlay to 3 seconds
+				autoPlay: 6000, //Set AutoPlay to 3 seconds
 				navigation : true, // Show next and prev buttons
 				slideSpeed : 400,
 				paginationSpeed : 300,
@@ -721,9 +722,7 @@
 			});
 
 			var innerHeight = window.innerHeight*3/4;
-			//console.log(innerHeight);
 			$('#owl .item img').css("max-height", innerHeight);
-			//$('#owl .item img').css("max-height", window.innerHeight);
 
 			function afterAction(){
 				var owl = this;
