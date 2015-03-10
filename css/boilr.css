@@ -131,8 +131,6 @@ body {
 	border-radius: 15px;
 }
 
-
-
 ul.hidden {
     display: none;
 }
@@ -268,4 +266,13 @@ ul.hidden {
 
 #explain > p{
 	margin-top: 20%;
+}
+
+div.row div.row div  p {
+	margin-top: 15%;
+}
+
+div.row div.row div {
+	padding-left: 10px;
+	padding-right: 10px;
 }

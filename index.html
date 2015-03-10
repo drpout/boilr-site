@@ -314,8 +314,10 @@
 </div>
 
 </script>
-
 </head>
+
+
+
 <body>
 <div class="navbar navbar-default navbar-fixed-top navbar-inverse"
 	role="navigation" id="navbar">
@@ -361,7 +363,7 @@
 </div>
 
 <div id="video-wrap" class="video-wrap">
-	<div class="overlay">
+	<div class="overlay" style="margin-top:80px">
 			<div>
 				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
 				<h1>Subscribe our newsletter!</h1>
@@ -379,60 +381,106 @@
 <div class="container-fluid main" id="main">
 	<div class="jumbotron" id="features">
 		<h1 class="translate">Features</h1>
-		<br />
+		<!-- <br />
 			<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
-		<br/>
-		<div class="row margin-top">
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12 ">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
+		<br/> -->
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/alarm-list.png" />
 				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-					Description
-				</div>
-			</div>
-			
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
-				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-				Description
-				</div>
-			</div>
-
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
-				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-				Description
-				</div>
-			</div>
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12 ">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
-				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-				Description
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Boilr is an Android app which monitors Bitcoin, cryptocurrencies and bullion prices, and triggers alarms according to user settings.</p>
 				</div>
 			</div>
 			
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<img src="img/screenshots/hit-creation.png" />
 				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-				Description
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<p><b>Price Hit</b></br></br> Triggered when price crosses the alarm's upper or lower limit.</p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/change-creation.png" />
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p><b>Price Change</b> </br></br> Triggered when price changes more than X amount (in currency or percentage) in a specified time frame (e.g. 15 min). It uses a rolling time frame: price is fetched with a given update interval (e.g. 30 s) and compared with the price fetched one time frame ago (e.g. 15 min ago).</p>
 				</div>
 			</div>
 
-			<div class="row center-block col-lg-4 col-sm-6 col-xs-12">
-				<div class="col-lg-6 col-sm-6 col-xs-6 ">
-					<!-- <img src="img/screenshots/alarm-firing.png" /> -->
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/hit-firing.png" />
 				</div>
-				<div class="col-lg-6 col-sm-6 col-xs-6">
-				Description
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Alarms ring until you turn them off, like an alarm clock. Meanwhile, alarm status is displayed on screen.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/app-settings.png" />
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Sound and vibration are configurable globally and individually for each alarm.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/deleting-alarm.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Delete alarms with a swipe.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/reordering-alarm.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Reorder alarms after a long click.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/exchanges.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Lists of exchanges, pairs and alarms are fully searchable, allowing a quick alarm setup and configuration.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/exchanges.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Market data is retrieved directly from the exchanges using Wi-Fi or Mobile Data (if allowed). Boilr supports all <a href=\"https://github.com/andrefbsantos/libdynticker/#supported-exchanges\" target=\"_blank\">exchanges available on libdynticker</a>, and all their pairs.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/lang-chinese.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Supports multiple languages: Chinese, Czech, French German, Italian, Polish, Portuguese and Spanish.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/ligh-theme.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>There is an alternative light theme.</p>
 				</div>
 			</div>
 		</div>
