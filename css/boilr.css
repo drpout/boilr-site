@@ -191,80 +191,34 @@ ul.hidden {
 }
 
 .overlay {
-    /*position: relative;*/
     position: absolute;
     width: 100%;
-    /*height: 100%;*/
     z-index: 1;	
-    /*display: inline-block;*/
-    bottom: 2%;
+    bottom: 5%;
     text-align: center;
 }
 
 .overlay > div {
-		position: relative;
-		/*position: absolute;*/
-		/*left: 50%;*/
-	    /*top: 20%;*/
-	    /*bottom: 20%;*/
-	    /*display: inline-block;*/
- 		display: inline-block;
-	    margin: 0 auto;
-	    /*width: 40%;*/
+	position: relative;
+	display: inline-block;
+    margin: 0 auto;
 }
 
 .overlay h1 {
-	font-size: 25px;
+	font-size: 40px;
 	color:white;
 }
 
 .overlay .input-group{
-	/*text-align: center;*/
 	margin: 0 auto;
 	width: 60%;
 }
 
-/*@media ( min-width: 500px) {
-	.overlay > div {
-		left: 15%;
-	}
-	.overlay h1 {
-		font-size: 25px;
-	}
-}
-
-@media ( min-width: 700px) {
-	.overlay > div {
-		left: 50%;
-	    
-	}
-
-	.overlay h1 {
-		font-size: 30px;
-	}
-}*/
-
-/*@media ( min-width: 1000px) {
-	.overlay > div {
-		left: 60%;
-	}
-
-	.overlay h1 {
-		font-size: 35px;
-	}
-}
-
 @media( min-height: 500px){
-	.overlay > div {		
-	    top: 70%;
-	}
 }
 
 @media( min-height: 1000px){
-	.overlay > div {		
-	    top: 80%;
-	}
-}*/
+}
 
 .margin-top > div {
 	margin-bottom: 26px;

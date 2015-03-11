@@ -92,22 +92,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
-					<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
 					<h1>{{subscribeOurNewsletter}}</h1>
-					<!--<form class="form-inline">-->
 					<div class="input-group">
 		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{enterEmail}}">
 		    			 <span class="input-group-btn">
 		    				<button type="submit" class="btn btn-default">{{subscribe}}</button>
 		    			 </span>
 		  			</div>
-			  		<!--</form>-->
-					<!--<div class="input-group">
-				      <input type="text" class="form-control" placeholder="Search for...">
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">Go!</button>
-				      </span>
-			    	</div>-->
 			    </div>
 	  		</div>
 		</div>
@@ -835,6 +826,25 @@
 					$(this).empty().append(data["featureImage"+owl.owl.currentItem]).fadeIn(200);
 				});
 			}
+
+			function myFadeTo(elem,time,fade){
+				$(elem).fadeTo(time,fade);
+			}
+
+			$('.overlay').fadeTo(0,fade);
+			$('.overlay').hover(function(){
+				myFadeTo(this,200,1);
+			},function(){
+				myFadeTo(this,200,fade);
+			});
+
+			$('input').focus(function(){
+				$('.overlay').fadeTo(200,1);
+			});
+
+			$('input').blur(function(){
+				$('.overlay').fadeTo(200,fade);
+			});
 		 }
 
 		 Handlebars.registerHelper('toUpperCase', function(str) {
