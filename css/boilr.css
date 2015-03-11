@@ -191,18 +191,26 @@ ul.hidden {
 }
 
 .overlay {
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: inline-block;
+    /*height: 100%;*/
+    z-index: 1;	
+    /*display: inline-block;*/
+    bottom: 2%;
+    text-align: center;
 }
 
 .overlay > div {
 		position: relative;
-		left: 0;
-	    top: 50%;
-	    display: inline-block;
+		/*position: absolute;*/
+		/*left: 50%;*/
+	    /*top: 20%;*/
+	    /*bottom: 20%;*/
+	    /*display: inline-block;*/
+ 		display: inline-block;
+	    margin: 0 auto;
+	    /*width: 40%;*/
 }
 
 .overlay h1 {
@@ -210,7 +218,13 @@ ul.hidden {
 	color:white;
 }
 
-@media ( min-width: 500px) {
+.overlay .input-group{
+	/*text-align: center;*/
+	margin: 0 auto;
+	width: 60%;
+}
+
+/*@media ( min-width: 500px) {
 	.overlay > div {
 		left: 15%;
 	}
@@ -228,9 +242,9 @@ ul.hidden {
 	.overlay h1 {
 		font-size: 30px;
 	}
-}
+}*/
 
-@media ( min-width: 1000px) {
+/*@media ( min-width: 1000px) {
 	.overlay > div {
 		left: 60%;
 	}
@@ -250,7 +264,7 @@ ul.hidden {
 	.overlay > div {		
 	    top: 80%;
 	}
-}
+}*/
 
 .margin-top > div {
 	margin-bottom: 26px;

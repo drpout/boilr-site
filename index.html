@@ -89,15 +89,26 @@
 			<source src="video/preview.mp4" type="video/mp4">
 		</video>
 		<div class="overlay">
-			<div>
-				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
-				<h1>{{subscribeOurNewsletter}}</h1>
-				<form class="form-inline">
-					<div class="form-group">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
+					<h1>{{subscribeOurNewsletter}}</h1>
+					<!--<form class="form-inline">-->
+					<div class="input-group">
 		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{enterEmail}}">
-		  			</div>	
-		  			<button type="submit" class="btn btn-default">{{subscribe}}</button>
-		  		</form>
+		    			 <span class="input-group-btn">
+		    				<button type="submit" class="btn btn-default">{{subscribe}}</button>
+		    			 </span>
+		  			</div>
+			  		<!--</form>-->
+					<!--<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Search for...">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button">Go!</button>
+				      </span>
+			    	</div>-->
+			    </div>
 	  		</div>
 		</div>
 </script>
@@ -842,12 +853,13 @@
     			if (pair[0] == variable) {
       				return pair[1];
     			}
-  			} 
+  			}
+  			//When everything fails, return english
+  			return "en";
 		}
 
 		$(document).ready( function() {	
 			var userLang = getQueryVariable("lang");
-			userLang = userLang==""
 			setup(userLang);
 		});		
 	</script>
