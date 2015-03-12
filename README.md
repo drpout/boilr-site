@@ -11,3 +11,9 @@ boilr-site uses [jQuery-One-Page-Nav](https://github.com/davist11/jQuery-One-Pag
 Original F-Droid logo by William Theaker and Robert Martinez. Bitcoin logo by [ECOGEX](http://bitcoinsymbol.org). Envelope icon by [Nemo](http://pixabay.com/en/envelope-mail-post-letter-petrol-306781). Reddit icon by [icomoon](http://www.flaticon.com/authors/icomoon).
 
 Modified version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by André Filipe Santos and David Ludovino. All licensed under [CC-BY-SA 4.0 International](http://creativecommons.org/licenses/by-sa/4.0).
+
+
+##Translators:	
+
+* Czech: [Jaroslav Lichtblau](https://github.com/svetlemodry) and [Michal Čihař](https://github.com/nijel)
+* French: [Tuux](http://www.rtnp.org)
