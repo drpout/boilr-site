@@ -202,13 +202,12 @@ ul.hidden {
 	position: relative;
 	display: inline-block;
 	margin: 0 auto;
-/* 	font-family: Futura; */
-	/*font-family: Helvetica;*/
 }
 
 .overlay h1 {
 	font-size: 40px;
 	color: white;
+	text-shadow: -1px 0 #CCCCCC, 0 1px #CCCCCC, 1px 0 #CCCCCC, 0 -1px #CCCCCC;
 }
 
 .overlay .input-group{
@@ -246,3 +245,4 @@ div.row div.row div {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
