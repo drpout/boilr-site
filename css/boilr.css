@@ -1,6 +1,6 @@
 div.main {
-		padding-top: 30px;
-	}
+	padding-top: 30px;
+}
 
 .navbar-brand > img {
 	max-width: 24px;
@@ -195,18 +195,20 @@ ul.hidden {
     width: 100%;
     z-index: 1;	
     bottom: 5%;
-    text-align: center;
+	text-align: center;
 }
 
 .overlay > div {
 	position: relative;
 	display: inline-block;
-    margin: 0 auto;
+	margin: 0 auto;
+/* 	font-family: Futura; */
+	/*font-family: Helvetica;*/
 }
 
 .overlay h1 {
 	font-size: 40px;
-	color:white;
+	color: white;
 }
 
 .overlay .input-group{
