@@ -12,8 +12,7 @@ Original F-Droid logo by William Theaker and Robert Martinez. Bitcoin logo by [E
 
 Modified version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by André Filipe Santos and David Ludovino. All licensed under [CC-BY-SA 4.0 International](http://creativecommons.org/licenses/by-sa/4.0).
 
-
-##Translators:	
+Translators:	
 
 * Czech: [Jaroslav Lichtblau](https://github.com/svetlemodry) and [Michal Čihař](https://github.com/nijel)
 * French: [Tuux](http://www.rtnp.org)
