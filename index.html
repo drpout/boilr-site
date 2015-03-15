@@ -111,24 +111,28 @@
 </script>
 
 <script id="video-template" type="text/x-handlebars-template">
-		<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
-			<source src="video/preview.webm" type="video/webm">
-			<source src="video/preview.ogg" type="video/ogg">
-			<source src="video/preview.mp4" type="video/mp4">
-		</video>
-		<div class="overlay">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-					<h1>{{subscribeOurNewsletter}}</h1>
+<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
+	<source src="video/preview.webm" type="video/webm">
+	<source src="video/preview.ogg" type="video/ogg">
+	<source src="video/preview.mp4" type="video/mp4">
+</video>
+<div class="overlay">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h1>{{subscribeOurNewsletter}}</h1>
+				<form  method="POST" action="http://mail.boilr.mobi/subscribe/newsletter" target="_blank">
+					<input class="hide" type="radio" name="digest" value="0" checked="">
 					<div class="input-group">
-		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{enterEmail}}">
-		    			 <span class="input-group-btn">
-		    				<button type="submit" class="btn btn-default">{{subscribe}}</button>
-		    			 </span>
-		  			</div>
-			    </div>
-		</div>
+	    			<input type="email" class="form-control" name="email" value="" 
+	    				placeholder="{{enterEmail}}">
+					<span class="input-group-btn">
+						<button type="Submit" name="email-button" class="btn btn-default">{{subscribe}}</button>
+					</span>
+				</div>
+			</form>
+	    </div>
+	</div>
 </div>
 </script>
 
@@ -681,7 +685,7 @@
 	<script src="js/jquery.nav.min.js"></script>
 	<script src="js/qrcode.min.js"></script>
 	<script src="js/colorbox.min.js"></script>
-	<script src="js/backgroundVideo.min.js"></script>
+	<script src="js/backgroundVideo.js"></script>
 	<script src="js/owl.carousel.min.js"></script>				
 	<script>
 		var fade = 0.5;
@@ -816,8 +820,7 @@
 			
 			$('#video_background').backgroundVideo({
 				parallaxOptions: {
-			    	offset: 30,
-			        effect: 1.5
+			        effect: 1.2
 			    }
 			});
 		
