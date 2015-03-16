@@ -117,21 +117,22 @@
 	<source src="video/preview.mp4" type="video/mp4">
 </video>
 <div class="overlay">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3">
-			<h1>{{subscribeOurNewsletter}}</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>{{subscribeOurNewsletter}}</h1>
 				<form  method="POST" action="http://mail.boilr.mobi/subscribe/newsletter" target="_blank">
 					<input class="hide" type="radio" name="digest" value="0" checked="">
 					<div class="input-group">
-	    			<input type="email" class="form-control" name="email" value="" 
-	    				placeholder="{{enterEmail}}">
-					<span class="input-group-btn">
-						<button type="Submit" name="email-button" class="btn btn-default">{{subscribe}}</button>
-					</span>
-				</div>
-			</form>
-	    </div>
+		    			<input type="email" class="form-control" name="email" value="" 
+		    				placeholder="{{enterEmail}}">
+						<span class="input-group-btn">
+							<button type="Submit" name="email-button" class="btn btn-default">{{subscribe}}</button>
+						</span>
+					</div>
+				</form>
+		    </div>
+		</div>
 	</div>
 </div>
 </script>
@@ -399,22 +400,35 @@
 </div>
 
 <div id="video-wrap" class="video-wrap">
-	<div class="overlay" style="margin-top:80px">
-			<div>
-				<!--<h1 for="exampleInputEmail1">Newsletter</h1>-->
-				<h1>Subscribe our newsletter!</h1>
-				<form class="form-inline">
-					<div class="form-group">
-		    			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-		  			</div>	
-		  			<button type="submit" class="btn btn-default">Subscribe</button>
-		  		</form>
-	  		</div>
-		</div>
 </div>
 
 
 <div class="container-fluid main" id="main">
+	
+
+	<div class="jumbotron" id="newsletter">
+		<!-- <h1 class="translate">Features</h1> -->
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3">
+						<h1>Sign our newsletter</h1>
+						<form  method="POST" action="http://mail.boilr.mobi/subscribe/newsletter" target="_blank">
+							<input class="hide" type="radio" name="digest" value="0" checked="">
+							<div class="input-group">
+				    			<input type="email" class="form-control" name="email" value="" 
+				    				placeholder="Enter email">
+								<span class="input-group-btn">
+									<button type="Submit" name="email-button" class="btn btn-default">Subscribe</button>
+								</span>
+							</div>
+						</form>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="jumbotron" id="features">
 		<h1 class="translate">Features</h1>
 		<div class="row">
@@ -823,6 +837,8 @@
 			        effect: 1.2
 			    }
 			});
+
+			console.log($('video').height());
 		
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 				owl.owlCarousel({

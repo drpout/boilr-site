@@ -198,6 +198,14 @@ ul.hidden {
 	text-align: center;
 }
 
+.jumbotron .overlay{
+	position: relative;
+    width: 100%;
+    /*z-index: 1;	*/
+    /*bottom: 5%;*/
+	/*text-align: center;	*/
+}
+
 .overlay > div {
 	position: relative;
 	display: inline-block;
