@@ -31,7 +31,7 @@
 	"featureImage5" : "Delete alarms with a swipe.",
 	"featureImage6" : "Reorder alarms after a long click.",
 	"featureImage7" : "Lists of exchanges, pairs and alarms are fully searchable, allowing a quick alarm setup and configuration.",
-	"featureImage8" : "Market data is retrieved directly from the exchanges via Wi-Fi or Mobile Data (if allowed). Boilr supports all <a href=\"https://github.com/andrefbsantos/libdynticker/#supported-exchanges\" target=\"_blank\">exchanges available on libdynticker</a>, and all their pairs.",
+	"featureImage8" : "Market data is retrieved directly from the exchanges via Wi-Fi or Mobile Data (if allowed). Boilr supports all <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\">exchanges available on libdynticker</a>, and all their pairs.",
 	"featureImage9" : "Supports multiple languages: Chinese, Czech, French, German, Italian, Polish, Portuguese and Spanish.",
 	"featureImage10": "There is an alternative light theme.",
 	"subscribe" : "Subscribe",

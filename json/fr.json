@@ -20,7 +20,7 @@
     "featureImage5": "Supprimer les alarmes avec un \"swipe\".", 
     "featureImage6": "Réorganiser les alarmes après un clic long.", 
     "featureImage7": "Listes d'échanges, les paires et les alarmes sont entièrement consultables, ce qui permet un réglage rapide de l'alarme et à d'autre configuration.", 
-    "featureImage8": "Les données du marché sont extraites directement des échanges à l'aide de Wi-Fi ou données Mobile (si autorisé). Boilr prend en charge tous les <a href=\"https://github.com/andrefbsantos/libdynticker/#supported-exchanges\" target=\"_blank\"> échanges disponibles sur libdynticker</a> et tous leurs paires.", 
+    "featureImage8": "Les données du marché sont extraites directement des échanges à l'aide de Wi-Fi ou données Mobile (si autorisé). Boilr prend en charge tous les <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\"> échanges disponibles sur libdynticker</a> et tous leurs paires.", 
     "featureImage9": "Supporte plusieurs langues : Chinois, Tchèque, Français Allemand, Italien, Polonais, Portugais et Espagnol.", 
     "features": "Fonctionnalités", 
     "freeAsInFreedom": "logiciel libre (free software)", 
