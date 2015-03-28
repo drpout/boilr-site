@@ -13,10 +13,10 @@
     "english": "Angličtina", 
     "enterEmail": "Vložit email", 
     "envelopeBy": "Ikonu obálky navrhl ", 
-    "featureImage0": "Boilr je aplikace pro Android, která monitoruje ceny pro Bitcoin, kryptoměny a bulliony a spouští alarmy dle uživatelských nastavení.", 
+    "featureImage0": "Boilr je aplikace pro Android, která monitoruje ceny pro Bitcoin, kryptoměn, kryptoaktiva, futures a opce a spouští alarmy dle uživatelských nastavení.", 
     "featureImage1": "<b>Dosažení ceny</b></br></br> Spuštěno při překročení nastavené horní a spodní hranice ceny.", 
     "featureImage10": "Je dostupný alternativní světlý vzhled.", 
-    "featureImage2": "Obrázek vlastností 2", 
+    "featureImage2": "", 
     "featureImage3": "Alarmy zvoní až do jejich vypnutí, jako u budíku. Přitom je stav alarmu zobrazen na displeji.", 
     "featureImage4": "Zvuky a vybrování lze nastavovat globálně nebo individuálně pro každý alarm.", 
     "featureImage5": "Mazat alarmy potažením.", 
@@ -35,7 +35,7 @@
     "similar": "Podobné", 
     "sourceCode": "Zdrojový kód", 
     "subscribe": "Odebírat", 
-    "subscribeOurNewsletter": "Odebírejte naše novinky!", 
+    "subscribeOurNewsletter": "Odebírejte naše novinky", 
     "supported": "Podporováno", 
     "websiteSource": "Zdrojový kód webové stránky je dostupný na"
 }
