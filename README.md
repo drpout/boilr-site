@@ -1,4 +1,6 @@
 # boilr-site
+[![Translation status](https://hosted.weblate.org/widgets/boilr/-/svg-badge.svg)](https://hosted.weblate.org/engage/boilr/?utm_source=widget)
+
 Site to support and advertise Boilr, available at http://boilr.mobi
 
 ## License and authorship
