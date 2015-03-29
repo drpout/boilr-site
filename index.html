@@ -65,9 +65,9 @@
 			<ul id="nav" class="nav navbar-nav">
 				<li><a href="#features">{{features}}</a></li>
 				<li><a href="#download">{{download}}</a></li>
+				<li><a href="#permissions">{{permissions}}</a></li>
 				<li><a href="#exchanges">{{exchanges}}</a></li>
 				<li><a href="#donate">{{donate}}</a></li>
-				<!--<li><a href="#similar">{{similar}}</a></li>-->
 			</ul>
 			<ul class="nav navbar-nav navbar-right social">
 				<li>
@@ -102,7 +102,7 @@
 	            		<li><a href="/?lang=en">English</a></li>
 	            		<li><a href="/?lang=fr">Français</a></li>
 						<li><a href="/?lang=pt">Português</a></li>
-	            		<li><a href="/?lang=zn">中文</a></li>
+	            		<li><a href="/?lang=zh">中文</a></li>
           			</ul>
         		</li>
 			</ul>
@@ -230,6 +230,49 @@
 				</p>
 			</div>
 		</div>
+	</div>
+
+	<div class="jumbotron" id="permissions">
+		<h1>{{reasonsForPermissions}}</h1>
+		</br>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>{{permission}}</th>
+					<th>{{reason}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{permSDCard}}</td>
+					<td>{{reasonSDCard}}</td>
+				</tr>
+				<tr>
+					<td>{{permScreenLock}}</td>
+					<td>{{reasonScreenLock}}</td>
+				</tr>
+				<tr>
+					<td>{{permNetworkAccess}}</td>
+					<td>{{reasonNetworkAccess}}</td>
+				</tr>
+				<tr>
+					<td>{{permNetworkConns}}</td>
+					<td>{{reasonNetworkConns}}</td>
+				</tr>
+				<tr>
+					<td>{{permStartup}}</td>
+					<td>{{reasonStartup}}</td>
+				</tr>
+				<tr>
+					<td>{{permVibration}}</td>
+					<td>{{reasonVibration}}</td>
+				</tr>
+				<tr>
+					<td>{{permPreventSleeping}}</td>
+					<td>{{reasonPreventSleeping}}</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 
 	<div class="jumbotron" id="exchanges">
@@ -396,6 +439,7 @@
 			<ul id="nav" class="nav navbar-nav ">
 				<li><a href="#features">Features</a></li>
 				<li><a href="#download">Download</a></li>
+				<li><a href="#permissions">Permissions</a></li>
 				<li><a href="#exchanges">Exchanges</a></li>
 				<li><a href="#donate">Donate</a></li>
 			</ul>
@@ -596,9 +640,52 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="jumbotron" id="permissions">
+		<h1>Reasons for Permissions</h1>
+		</br>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Permission</th>
+					<th>Reason</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Read the contents of your SD card</td>
+					<td>Used to fetch your custom ringtones.</td>
+				</tr>
+				<tr>
+					<td>Disable your screen lock</td>
+					<td>So you can turn off a ringing alarm without unlocking your device.</td>
+				</tr>
+				<tr>
+					<td>Full network access</td>
+					<td>To fetch data from the exchanges.</td>
+				</tr>
+				<tr>
+					<td>View network connections</td>
+					<td>To know whether you're using Wi-Fi or Mobile Data, allowing Mobile Data restriction.</td>
+				</tr>
+				<tr>
+					<td>Run at startup</td>
+					<td>To grab your active alarms and start updating them.</td>
+				</tr>
+				<tr>
+					<td>Control vibration</td>
+					<td>Allows vibration when an alarm is triggered.</td>
+				</tr>
+				<tr>
+					<td>Prevent phone from sleeping</td>
+					<td>Used to keep showing the alarm triggered activity until you press the turn off button.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 	<div class="jumbotron" id="exchanges">
-		<h1>Supported exchanges</h1>
+		<h1>Supported Exchanges</h1>
 		</br>
 		<div class="row">
 		<div class="col-md-3 col-sm-6 col-xs-6"><p>796 Exchange</p></div>
@@ -874,7 +961,7 @@
 			    }
 			});
 
-			console.log($('video').height());
+			//console.log($('video').height());
 		
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 				owl.owlCarousel({
@@ -940,7 +1027,7 @@
 		});
 
 		function getQueryVariable(variable) {
- 			var query = window.location.search.substring(1);
+			var query = window.location.search.substring(1);
   			var vars = query.split("&");
 			for (var i=0;i<vars.length;i++) {
     			var pair = vars[i].split("=");
