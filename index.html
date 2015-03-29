@@ -65,7 +65,7 @@
 			<ul id="nav" class="nav navbar-nav">
 				<li><a href="#features">{{features}}</a></li>
 				<li><a href="#download">{{download}}</a></li>
-				<li><a href="#supported">{{supported}}</a></li>
+				<li><a href="#exchanges">{{exchanges}}</a></li>
 				<li><a href="#donate">{{donate}}</a></li>
 				<!--<li><a href="#similar">{{similar}}</a></li>-->
 			</ul>
@@ -98,9 +98,10 @@
 				<li class="dropdown">
           			<a href="#" class="dropdown-toggle external" data-toggle="dropdown" role="button" aria-expanded="false">{{language}} <span class="caret"></span></a>
           			<ul class="dropdown-menu" role="menu">
+						<li><a href="/?lang=cs">Čeština</a></li>
 	            		<li><a href="/?lang=en">English</a></li>
 	            		<li><a href="/?lang=fr">Français</a></li>
-	            		<li><a href="/?lang=cs">Čeština</a></li>
+						<li><a href="/?lang=pt">Português</a></li>
 	            		<li><a href="/?lang=zn">中文</a></li>
           			</ul>
         		</li>
@@ -146,6 +147,9 @@
 						<img class="lazyOwl" data-src="img/screenshots/alarm-list.png" />
 					</div>
 					<div class="item">
+						<img class="lazyOwl" data-src="img/screenshots/exchanges.png" />
+					</div>
+					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/hit-creation.png" />
 					</div>
 					<div class="item">
@@ -155,6 +159,9 @@
 						<img class="lazyOwl" data-src="img/screenshots/hit-firing.png" />
 					</div>
 					<div class="item">
+						<img class="lazyOwl" data-src="img/screenshots/search-pairs.png" />
+					</div>
+					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/app-settings.png" />
 					</div>
 					<div class="item">
@@ -162,12 +169,6 @@
 					</div>
 					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/reordering-alarm.png" />
-					</div>
-					<div class="item">
-						<img class="lazyOwl" data-src="img/screenshots/search-pairs.png" />
-					</div>
-					<div class="item">
-						<img class="lazyOwl" data-src="img/screenshots/exchanges.png" />
 					</div>
 					<div class="item">
 						<img class="lazyOwl" data-src="img/screenshots/lang-chinese.png" />
@@ -184,11 +185,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="jumbotron" id="inaction">
-		<h1>{{inAction}}</h1>
-		<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
-	</div>-->
 
 	<div class="jumbotron" id="download">
 		<h1>{{downloadAndFork}}</h1>
@@ -236,7 +232,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" id="supported">
+	<div class="jumbotron" id="exchanges">
 		<h1>{{supportedExchanges}}</h1>
 		</br>
 		<div class="row">
@@ -356,13 +352,13 @@
 -->
 
 <div class="panel-footer">
-	<p>{{originalFDroid}}. {{bitcoinBy}}<a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
+	<p>{{originalFDroid}}. {{bitcoinBy}} <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
 		{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
 		{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
 		<br/>
-		{{modifiedVersion}}<a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
+		{{modifiedVersion}} <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
 		<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-		{{boilrBy}}<a href="http://cargocollective.com/algazarra/index" target="_blank">Algazarra</a>.
+		{{boilrBy}} <a href="http://cargocollective.com/algazarra/index" target="_blank">Algazarra</a>.
 		{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
 		<br />
 		{{websiteSource}} <a href="https://github.com/drpout/boilr-site" target="_blank">github.com/drpout/boilr-site</a>.
@@ -400,7 +396,7 @@
 			<ul id="nav" class="nav navbar-nav ">
 				<li><a href="#features">Features</a></li>
 				<li><a href="#download">Download</a></li>
-				<li><a href="#supported">Supported</a></li>
+				<li><a href="#exchanges">Exchanges</a></li>
 				<li><a href="#donate">Donate</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -464,11 +460,20 @@
 			</div>
 			
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/exchanges.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Boilr supports 70+ exchanges and all their pairs.</br></br>Market data is retrieved directly from the exchanges via Wi-Fi or Mobile Data (if allowed), using <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\">libdynticker</a>.</p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
 				<div class="col-md-6 col-sm-6 col-xs-6">
 					<img src="img/screenshots/hit-creation.png" />
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6 ">
-					<p><b>Price Hit</b></br></br> Triggered when price crosses the alarm's upper or lower limit.</p>
+					<p><b>Price Hit</b></br></br>Triggered when price crosses the alarm's upper or lower limit.</p>
 				</div>
 			</div>
 			
@@ -477,7 +482,7 @@
 					<img src="img/screenshots/change-creation.png" />
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6">
-					<p><b>Price Change</b> </br></br> Triggered when price changes more than X amount (in currency or percentage) in a specified time frame (e.g. 15 min). It uses a rolling time frame: price is fetched with a given update interval (e.g. 30 s) and compared with the price fetched one time frame ago (e.g. 15 min ago).</p>
+					<p><b>Price Change</b></br></br>Triggered when price changes more than X amount (in currency or percentage) in a specified time frame (e.g. 15 min). It uses a rolling time frame: price is fetched with a given update interval (e.g. 30 s) and compared with the price fetched one time frame ago (e.g. 15 min ago).</p>
 				</div>
 			</div>
 
@@ -487,6 +492,15 @@
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6">
 					<p>Triggered alarms ring, displaying their status, until you turn them off. Just like an alarm clock.</p>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
+				<div class="col-md-6 col-sm-6 col-xs-6 ">
+					<img src="img/screenshots/search-pairs.png"/>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<p>Lists of exchanges, pairs and alarms are fully searchable, allowing quick alarm setup and configuration.</p>
 				</div>
 			</div>
 
@@ -519,24 +533,6 @@
 
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
 				<div class="col-md-6 col-sm-6 col-xs-6 ">
-					<img src="img/screenshots/search-pairs.png"/>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					<p>Lists of exchanges, pairs and alarms are fully searchable, allowing quick alarm setup and configuration.</p>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
-				<div class="col-md-6 col-sm-6 col-xs-6 ">
-					<img src="img/screenshots/exchanges.png"/>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					<p>Market data is retrieved directly from the exchanges via Wi-Fi or Mobile Data (if allowed). Boilr supports all <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\">exchanges available on libdynticker</a>, and all their pairs.</p>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
-				<div class="col-md-6 col-sm-6 col-xs-6 ">
 					<img src="img/screenshots/lang-chinese.png"/>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6">
@@ -554,11 +550,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="jumbotron" id="inaction">
-		<h1>{{inAction}}</h1>
-		<iframe width="640" height="360" src="//www.youtube.com/embed/NaiiJs2XO0M?rel=0" frameborder="0" allowfullscreen class="external"></iframe>
-	</div>-->
 
 	<div class="jumbotron" id="download">
 		<h1>Download and Fork</h1>
@@ -606,7 +597,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" id="supported">
+	<div class="jumbotron" id="exchanges">
 		<h1>Supported exchanges</h1>
 		</br>
 		<div class="row">
