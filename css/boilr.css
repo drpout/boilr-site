@@ -1,3 +1,7 @@
+body{
+  font-family: Helvetica,Arial,"Helvetica Neue",sans-serif;
+}
+
 div.main {
 	padding-top: 30px;
 }
@@ -51,8 +55,12 @@ body {
 }
 
 .jumbotron h1 {
-	font-size: 40px;
+	font-size: 28px;
 	font-weight: bold
+}
+
+.jumbotron h2 {
+	font-size: 26px;
 }
 
 .jumbotron dl, .jumbotron p, .jumbotron a {
@@ -63,33 +71,27 @@ body {
 	font-size: 12px;
 }
 
-@media ( max-width :440px) {
-	.jumbotron dl, .jumbotron p, .jumbotron a {
-		font-size: 15px;
-	}
-	.jumbotron h1 {
-		font-size: 34px;
-	}
-	.jumbotron h2 {
-		font-size: 30px;
-	}
-	.panel-footer p {
-		font-size: 11px;
-	}
-}
-
 @media ( max-width :380px) {
 	.jumbotron dl, .jumbotron p, .jumbotron a {
 		font-size: 11px;
 	}
 	.jumbotron h1 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.jumbotron h2 {
-		font-size: 24px;
+		font-size: 22px;
 	}
 	.panel-footer p {
 		font-size: 10px;
+	}
+}
+
+@media ( max-width :440px) {
+	.jumbotron dl, .jumbotron p, .jumbotron a {
+		font-size: 15px;
+	}
+	.panel-footer p {
+		font-size: 11px;
 	}
 }
 
@@ -213,20 +215,45 @@ ul.hidden {
 }
 
 .overlay h1 {
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	text-shadow: -1px 0 #CCCCCC, 0 1px #CCCCCC, 1px 0 #CCCCCC, 0 -1px #CCCCCC;
 }
 
-.overlay .input-group{
+.overlay .input-group {
 	margin: 0 auto;
-	width: 60%;
 }
 
-@media( min-height: 500px){
+@media ( max-width :380px) {
+
 }
 
-@media( min-height: 1000px){
+@media ( max-width :440px) {
+
+}
+
+@media ( max-width :767px) {
+	.overlay .input-group {
+		width: 100%;
+	}
+}
+
+@media ( min-width :768px) {
+	.overlay .input-group {
+		width: 40%;
+	}
+}
+
+@media ( min-width :992px) {
+	.overlay .input-group {
+		width: 32%;
+	}
+}
+
+@media ( min-width :1200px) {
+	.overlay .input-group {
+		width: 55%;
+	}
 }
 
 .margin-top > div {
