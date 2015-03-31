@@ -1,3 +1,7 @@
+body{
+  font-family: Helvetica,Arial,"Helvetica Neue",sans-serif;
+}
+
 div.main {
 	padding-top: 30px;
 }
@@ -218,7 +222,7 @@ ul.hidden {
 	text-shadow: -1px 0 #CCCCCC, 0 1px #CCCCCC, 1px 0 #CCCCCC, 0 -1px #CCCCCC;
 }
 
-.overlay .input-group{
+.overlay .input-group {
 	margin: 0 auto;
 	width: 60%;
 }
@@ -253,4 +257,3 @@ div.row div.row div {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
