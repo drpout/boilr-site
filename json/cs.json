@@ -38,7 +38,6 @@
     "exchanges": "Burzy", 
     "websiteSource": "Zdrojový kód webové stránky je dostupný na",
     "permissions" : "Oprávnění",
-    "reasonsForPermissions" : "Důvody vyžadovaných Oprávnění",
     "permission" : "Oprávnění",
 	"reason" : "Důvod",
 	"permSDCard" : "Číst data z paměťové karty",
@@ -54,5 +53,13 @@
 	"permVibration" : "Kontrola vibrování",
 	"reasonVibration" : "Vibrace při spuštění alarmu.",
 	"permPreventSleeping" : "Zamezit režimu spánku telefonu",
-	"reasonPreventSleeping" : "Použité pro běh alarmu až do stiknutí tlačítka vypnutí."
+	"reasonPreventSleeping" : "Použité pro běh alarmu až do stiknutí tlačítka vypnutí.",
+	"help" : "Pomoc",
+	"gettingHelp" : "Získat Pomoc",
+	"bugsSubmitt" : "Pro pomoc, hlášení chyb a návrhů vylepšení použijte",
+	"GitHubIssues" : "GitHub issues",
+	"QRCode" : "QR Kód",
+	"errorGitHub" : "Chyba: nelze se připojit k GitHub",
+	"BTCDonationAddress" : "Boilr BTC darování adresa",
+	"DOGEDonationAddress" : "Boilr DOGE darování adresa"
 }
