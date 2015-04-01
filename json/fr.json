@@ -37,5 +37,12 @@
     "subscribeOurNewsletter": "S’abonner à la liste de diffusion", 
     "exchanges": "Échanges", 
     "supportedExchanges": "Échanges Soutenus", 
-    "websiteSource": "Le code source du site Web est disponible à"
+    "websiteSource": "Le code source du site Web est disponible à",
+    "permissions" : "Autorisations",
+    "help" : "Assistance",
+	"gettingHelp" : "Obtenir Assistance",
+    "QRCode" : "Code QR",
+	"errorGitHub" : "Erreur: ne peut pas se connecter à GitHub",
+	"BTCDonationAddress" : "Adresse de don avec BTC",
+	"DOGEDonationAddress" : "Adresse de don avec DOGE"
 }

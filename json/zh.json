@@ -20,7 +20,6 @@
 	"subscribeOurNewsletter" : "登录简讯",
 	"enterEmail" : "输入电子邮件",
 	"permissions" : "用到的权限",
-    "reasonsForPermissions" : "用到的权限和对应的原因",
     "permission" : "用到的权限",
 	"reason" : "原因",
 	"permSDCard" : "读取SD卡数据",
@@ -36,5 +35,10 @@
 	"permVibration" : "震动控制",
 	"reasonVibration" : "提醒触发时产生震动。",
 	"permPreventSleeping" : "防止手机进入睡眠",
-	"reasonPreventSleeping" : "提醒被触发时保持显示直到您关闭。"
+	"reasonPreventSleeping" : "提醒被触发时保持显示直到您关闭。",
+	"help" : "帮助",
+	"gettingHelp" : "帮助",
+	"bugsSubmitt" : "如果您需要帮助，或者要报告bug和需求，请使用我们的",
+	"GitHubIssues" : "GitHub issues",
+	"QRCode" : "QR碼"
 }

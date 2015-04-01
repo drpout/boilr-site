@@ -65,6 +65,7 @@
 			<ul id="nav" class="nav navbar-nav">
 				<li><a href="#features">{{features}}</a></li>
 				<li><a href="#download">{{download}}</a></li>
+				<li><a href="#help">{{help}}</a></li>
 				<li><a href="#permissions">{{permissions}}</a></li>
 				<li><a href="#exchanges">{{exchanges}}</a></li>
 				<li><a href="#donate">{{donate}}</a></li>
@@ -232,9 +233,17 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="jumbotron" id="help">
+		<h1>{{gettingHelp}}</h1>
+		</br>
+		<p>{{bugsSubmitt}} <a id="issues-link" href="https://github.com/drpout/boilr/issues" target="_blank">{{GitHubIssues}}</a>.</br>{{beSpecific}}</p>
+		<p>{{browseFAQ}} <a id="faq-link" href="https://github.com/drpout/boilr/issues?q=label%3Aquestion" target="_blank">{{issuesLabeledQuestions}}</a>.</p>
+	</div>
+
 
 	<div class="jumbotron" id="permissions">
-		<h1>{{reasonsForPermissions}}</h1>
+		<h1>{{permissions}}</h1>
 		</br>
 		<table class="table">
 			<thead>
@@ -365,7 +374,7 @@
 				<h2 class="text-center">Bitcoin</h2>
 				<p class="text-center sub-title">
 					<a href="bitcoin:1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx">1PHuSWfuAwR6oz9qV93rTdMVozfM85Qqxx</a><br />
-					(<a id="qr-donation-btc" href="img/donations-btc.png">QR Code</a>)
+					(<a id="qr-donation-btc" href="img/donations-btc.png">{{QRCode}}</a>)
 				</p>
 			</div>
 			<div class="col-sm-3 col-xs-6">
@@ -378,8 +387,7 @@
 				<h2 class="text-center">Dogecoin</h2>
 				<p class="text-center sub-title">
 					<a href="dogecoin:DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg">DSSJyAtJy9xokkbfTUQ5NQov8M1WQ8FaYg</a><br />
-					(<a id="qr-donation-doge" href="img/donations-doge.png">QR
-						Code</a>)
+					(<a id="qr-donation-doge" href="img/donations-doge.png">{{QRCode}}</a>)
 				</p>
 			</div>
 			<div class="col-sm-3 col-xs-6">
@@ -436,6 +444,7 @@
 			<ul id="nav" class="nav navbar-nav ">
 				<li><a href="#features">Features</a></li>
 				<li><a href="#download">Download</a></li>
+				<li><a href="#help">Help</a></li>
 				<li><a href="#permissions">Permissions</a></li>
 				<li><a href="#exchanges">Exchanges</a></li>
 				<li><a href="#donate">Donate</a></li>
@@ -513,7 +522,7 @@
 					<img src="img/screenshots/hit-creation.png" />
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6 ">
-					<p><b>Price Hit</b></br></br>Triggered when price crosses the alarm's upper or lower limit.</p>
+					<p><b>Price Hit</b></br></br>Triggered when price crosses the alarm's upper or lower limit. One limit may be left empty to create an alarm with a single trigger.</p>
 				</div>
 			</div>
 			
@@ -638,8 +647,15 @@
 		</div>
 	</div>
 	
+	<div class="jumbotron" id="help">
+		<h1>Getting Help</h1>
+		</br>
+		<p>Bug reports, feature requests and general help questions should be submitted on our <a id="issues-link" href="https://github.com/drpout/boilr/issues" target="_blank">GitHub issues</a>.</br>Try being specific when choosing the right title and label for your issue.</p>
+		<p>You can browse through a FAQ by checking all <a id="faq-link" href="https://github.com/drpout/boilr/issues?q=label%3Aquestion" target="_blank">issues labeled as questions</a>.</p>
+	</div>
+	
 	<div class="jumbotron" id="permissions">
-		<h1>Reasons for Permissions</h1>
+		<h1>Permissions</h1>
 		</br>
 		<table class="table">
 			<thead>
@@ -821,28 +837,28 @@
 	<script src="js/qrcode.min.js"></script>
 	<script src="js/colorbox.min.js"></script>
 	<script src="js/backgroundVideo.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>				
+	<script src="js/owl.carousel.min.js"></script>
 	<script>
 		var fade = 0.5;
 		function setup(userLang){
 			var strings = "json/"+userLang+".json"
-			$.getJSON(strings, function(data) {
-				setupLanguage(data);
-				setupSite(data);
+			$.getJSON(strings, function(i18nStrings) {
+				setupLanguage(i18nStrings);
+				setupSite(i18nStrings);
 			}).fail(function(){
 				//Back to english
-				$.getJSON("json/en.json", function(data) {
-					setupLanguage(data);
-		 			setupSite(data);
+				$.getJSON("json/en.json", function(i18nStrings) {
+					setupLanguage(i18nStrings);
+		 			setupSite(i18nStrings);
 				});
 			});	
 		}
 		
-		function setupLanguage(data){
+		function setupLanguage(i18nStrings){
 			
 			var videoTemplate = $('#video-template').html();
 			videoTemplate = Handlebars.compile(videoTemplate);
-			$('#video-wrap').empty().append(videoTemplate(data));
+			$('#video-wrap').empty().append(videoTemplate(i18nStrings));
 			
 			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 				// $('#video-wrap').empty().append("<img id=\"video_background\" src=\"img/screenshots/alarm-list.png\">");
@@ -853,18 +869,18 @@
 
 			// var overlayTemplate = $('#overlay-template').html();
 			// overlayTemplate = Handlebars.compile(overlayTemplate);
-			// $('#video-wrap').append(overlayTemplate(data));
+			// $('#video-wrap').append(overlayTemplate(i18nStrings));
 			
 			var navTemplate = $("#nav-template").html();
 			navTemplate = Handlebars.compile(navTemplate);
-			$('#navbar').empty().append(navTemplate(data));
+			$('#navbar').empty().append(navTemplate(i18nStrings));
 			
 			var mainTemplate = $("#main-template").html();
 			mainTemplate = Handlebars.compile(mainTemplate);
-			$('#main').empty().append(mainTemplate(data));
+			$('#main').empty().append(mainTemplate(i18nStrings));
 		 }
 
-		 function setupSite(data){
+		 function setupSite(i18nStrings){
 		 	var url = window.location.href;
 			if(url.indexOf("#video-wrap") > -1 || url.indexOf("#") === -1 ){
 				$('#navbar').fadeTo(0,fade);
@@ -877,8 +893,7 @@
 				filter : ':not(.external)',
 				scrollThreshold : 0.5,
 				scrollChange: function (nav){
-					console.log("asdasd");
-					console.log($(nav).find('a')[0]['hash']);
+					//console.log($(nav).find('a')[0]['hash']);
 					if($(nav).find('a').attr('href') ==='#video-wrap'){
 						$('#navbar').fadeTo(400,fade);
 					}else{
@@ -891,7 +906,7 @@
 			});
 			
 			$('#nav li a').click(function(){
-				console.log($(this)[0]["hash"]);
+				//console.log($(this)[0]["hash"]);
 				if($(this)[0]["hash"] ==="#features"){
 					owl.trigger("owl.jumpTo",0);
 				}
@@ -904,11 +919,11 @@
 
 			$('#qr-donation-btc').colorbox({
 				href : 'img/donations-btc.png',
-				title : 'Boilr BTC donation address'
+				title : i18nStrings['BTCDonationAddress']
 			});
 			$('#qr-donation-doge').colorbox({
 				href : 'img/donations-doge.png',
-				title : 'Boilr DOGE donation address'
+				title : i18nStrings['DOGEDonationAddress']
 			});
 
 			var ua = navigator.userAgent.toLowerCase();
@@ -927,10 +942,10 @@
 			$.ajax({
 				url : 'https://api.github.com/repos/drpout/boilr/releases'
 				}).done(
-					function(data) {
-						if (data.length > 0) {
-							var version = data[0].tag_name;
-							var url = data[0].assets[0].browser_download_url;
+					function(releaseData) {
+						if (releaseData.length > 0) {
+							var version = releaseData[0].tag_name;
+							var url = releaseData[0].assets[0].browser_download_url;
 							var apkLink = $('#apk-link');
 							apkLink.attr('href',url);
 							apkLink.removeClass('disabled');
@@ -938,18 +953,18 @@
 							textApk.text(textApk.text()	+ ' v'+ version);
 							var qrcode = new QRCode('qr-apk');
 							qrcode.makeCode(url);
-							qrApkLink.text('QR Code');
+							qrApkLink.text(i18nStrings['QRCode']);
 							qrApkLink.attr('href','javascript:void(0);');
 							qrApkLink.colorbox({
 								inline : true,
 								href : $('#qr-apk img'),
-								title : 'APK v' + version + ' download link'
+								title : 'APK v' + version
 							});
 						} else {
-							qrApkLink.text('Error: cannot connect to GitHub');
+							qrApkLink.text(i18nStrings['errorGitHub']);
 					}
 				}).fail(function() {
-					qrApkLink.text('Error: cannot connect to GitHub');
+					qrApkLink.text(i18nStrings['errorGitHub']);
 				});
 			})();
 			
@@ -992,7 +1007,7 @@
 			function afterAction(){
 				var owl = this;
 				$('#explain > p').fadeOut(200,function(){
-					$(this).empty().append(data["featureImage"+owl.owl.currentItem]).fadeIn(200);
+					$(this).empty().append(i18nStrings["featureImage"+owl.owl.currentItem]).fadeIn(200);
 				});
 			}
 
