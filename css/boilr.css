@@ -314,3 +314,6 @@ div.row div.row div {
 	padding-right: 10px;
 }
 
+.owl-theme .owl-controls .owl-page span {
+	background: #237EA0 !important;
+}
