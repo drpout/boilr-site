@@ -224,6 +224,39 @@ ul.hidden {
 	margin: 0 auto;
 }
 
+.never-miss-a-trade {	
+	position: absolute;
+    width: auto !important;
+    z-index: 1;
+    bottom: 20%;
+	right: 5%;
+	text-align: center;
+}
+
+.never-miss-a-trade h1 {
+	font-size: 44px;
+	color: white;
+	text-shadow: -1px 0 #BEBEBE, 0 1px #BEBEBE, 1px 0 #BEBEBE, 0 -1px #BEBEBE;
+	text-decoration: none;
+}
+
+
+.never-miss-a-trade a:link {
+    text-decoration: none;
+}
+
+.never-miss-a-trade a:visited {
+    text-decoration: none;
+}
+
+.never-miss-a-trade a:hover {
+    text-decoration: none;
+}
+
+.never-miss-a-trade a:active {
+    text-decoration: none;
+}
+
 @media ( max-width :380px) {
 
 }
@@ -279,4 +312,8 @@ div.row div.row div  p {
 div.row div.row div {
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	background: #237EA0 !important;
 }

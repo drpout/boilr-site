@@ -136,6 +136,11 @@
 		</div>
 	</div>
 </div>
+<div class="never-miss-a-trade overlay">
+	<a href="https://twitter.com/intent/tweet?text=%23NeverMissATrade+with+@boilrapp" target="_blank">
+		<h1>#NerverMissATrade</h1>
+	</a>
+</div>
 </script>
 
 <script id="main-template" type="text/x-handlebars-template">
@@ -1015,11 +1020,12 @@
 				$(elem).fadeTo(time,fade);
 			}
 
-			$('.overlay').fadeTo(0,fade);
+			var overlayFade = 0.7;
+			$('.overlay').fadeTo(0,overlayFade);
 			$('.overlay').hover(function(){
 				myFadeTo(this,200,1);
 			},function(){
-				myFadeTo(this,200,fade);
+				myFadeTo(this,200,overlayFade);
 			});
 
 			$('input').focus(function(){
