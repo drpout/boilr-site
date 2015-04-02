@@ -112,35 +112,35 @@
 </script>
 
 <script id="video-template" type="text/x-handlebars-template">
-<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
-	<source src="video/preview.webm" type="video/webm">
-	<source src="video/preview.ogg" type="video/ogg">
-	<source src="video/preview.mp4" type="video/mp4">
-</video>
-<div class="overlay">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>{{subscribeOurNewsletter}}</h1>
-				<form  method="POST" action="http://mail.boilr.mobi/subscribe/newsletter" target="_blank">
-					<input class="hide" type="radio" name="digest" value="0" checked="">
-					<div class="input-group">
-		    			<input type="email" class="form-control" name="email" value="" 
-		    				placeholder="{{enterEmail}}">
-						<span class="input-group-btn">
-							<button type="Submit" name="email-button" class="btn btn-default">{{subscribe}}</button>
-						</span>
-					</div>
-				</form>
-		    </div>
+	<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
+		<source src="video/preview.webm" type="video/webm">
+		<source src="video/preview.ogg" type="video/ogg">
+		<source src="video/preview.mp4" type="video/mp4">
+	</video>
+	<div class="overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1>{{subscribeOurNewsletter}}</h1>
+					<form  method="POST" action="http://mail.boilr.mobi/subscribe/newsletter" target="_blank">
+						<input class="hide" type="radio" name="digest" value="0" checked="">
+						<div class="input-group">
+							<input type="email" class="form-control" name="email" value="" 
+								placeholder="{{enterEmail}}">
+							<span class="input-group-btn">
+								<button type="Submit" name="email-button" class="btn btn-default">{{subscribe}}</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="never-miss-a-trade overlay">
-	<a href="https://twitter.com/intent/tweet?text=%23NeverMissATrade+with+@boilrapp" target="_blank">
-		<h1>#NerverMissATrade</h1>
-	</a>
-</div>
+	<div class="never-miss-a-trade overlay">
+		<a href="https://twitter.com/intent/tweet?text=%23NeverMissATrade+with+@boilrapp" target="_blank">
+			<h1>#NerverMissATrade</h1>
+		</a>
+	</div>
 </script>
 
 <script id="main-template" type="text/x-handlebars-template">
@@ -402,24 +402,23 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="panel-footer">
-	<p>{{originalFDroid}}. {{bitcoinBy}} <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
-		{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
-		{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
-		<br/>
-		{{modifiedVersion}} <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
-		<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
-		{{boilrBy}} <a href="http://cargocollective.com/algazarra/index" target="_blank">Algazarra</a>.
-		{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
-		<br />
-		{{websiteSource}} <a href="https://github.com/drpout/boilr-site" target="_blank">github.com/drpout/boilr-site</a>.
-		{{licensedUnder}} <a href="https://github.com/drpout/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
-		<br/>
-		<a href="jslicense.html" rel="jslicense">{{jsLicenseInformation}}</a>
-	</p>
-</div>
+	<div class="panel-footer">
+		<p>{{originalFDroid}}. {{bitcoinBy}} <a href="http://bitcoinsymbol.org" target="_blank">ECOGEX</a>.
+			{{envelopeBy}} <a href="http://pixabay.com/en/envelope-mail-post-letter-petrol-306781" target="_blank">Nemo</a>.
+			{{redditBy}} <a href="http://www.flaticon.com/authors/icomoon" target="_blank">Icomoon</a>.
+			<br/>
+			{{modifiedVersion}} <a href="https://github.com/andrefbsantos" target="_blank">André Filipe Santos</a>,
+			<a href="https://github.com/dllud" target="_blank">David Ludovino</a>.
+			{{boilrBy}} <a href="http://cargocollective.com/algazarra/index" target="_blank">Algazarra</a>.
+			{{allLicensedUnder}} <a href="http://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC-BY-SA 4.0</a>.
+			<br />
+			{{websiteSource}} <a href="https://github.com/drpout/boilr-site" target="_blank">github.com/drpout/boilr-site</a>.
+			{{licensedUnder}} <a href="https://github.com/drpout/boilr-site/blob/gh-pages/LICENSE" target="_blank">GNU AGPL v3+</a>.
+			<br/>
+			<a href="jslicense.html" rel="jslicense">{{jsLicenseInformation}}</a>
+		</p>
+	</div>
 
 </script>
 </head>
@@ -475,11 +474,14 @@
 <div id="video-wrap" class="video-wrap">
 </div>
 
-
 <div class="container-fluid main" id="main">
-	
 
 	<div class="jumbotron" id="newsletter">
+		<div class="never-miss-a-trade overlay">
+			<a href="https://twitter.com/intent/tweet?text=%23NeverMissATrade+with+@boilrapp" target="_blank">
+				<h1>#NerverMissATrade</h1>
+			</a>
+		</div>
 		<div class="overlay">
 			<div class="container">
 				<div class="row">
@@ -500,7 +502,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="jumbotron" id="features">
 		<h1 class="translate">Features</h1>
 		<div class="row">
