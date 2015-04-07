@@ -36,8 +36,7 @@
 	"reasonVibration" : "提醒触发时产生震动。",
 	"permPreventSleeping" : "防止手机进入睡眠",
 	"reasonPreventSleeping" : "提醒被触发时保持显示直到您关闭。",
-	"help" : "帮助",
-	"gettingHelp" : "帮助",
+	"support" : "帮助",
 	"bugsSubmitt" : "如果您需要帮助，或者要报告bug和需求，请使用我们的",
 	"GitHubIssues" : "GitHub issues",
 	"QRCode" : "QR碼"
