@@ -20,7 +20,7 @@
     "errorGitHub": "Error: no se puede conectar a GitHub", 
     "exchanges": "Intercambios", 
     "featureImage0": "Boilr es un aplicación libre, como en \"libertad\", que permite monitorizar Bitcoin, cryptomonedas, cryptobienes, futuros y opciones, generando alarmas de precio conforme a su configuración.", 
-    "featureImage1": "Boilr soporta +70 intercambios y todos sus pares.</br></br> Los datos del mercado son obtenidos directamente de los intercambios, via Wi-Fi o datos móviles (si está permitido), utilizando <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\"> libdynticker</a>.", 
+    "featureImage1": "Boilr soporta +90 intercambios y todos sus pares.</br></br> Los datos del mercado son obtenidos directamente de los intercambios, via Wi-Fi o datos móviles (si está permitido), utilizando <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\"> libdynticker</a>.", 
     "featureImage10": "Hay un tema claro alternativo.", 
     "featureImage2": "<b>Precio afectado</b></br></br> Active, cuando el precio cruce el límite superior o inferior de la alarma. Un límite puede dejarse vacío para crear una alarma con un solo disparo.", 
     "featureImage3": "<b>Cambio de precio</b></br></br> Desencadenado cuando los cambios en el precio es mayor de X cantidad (en moneda o en porcentaje) en un marco de tiempo especificado (por ejemplo 15 minutos). Utiliza un marco de tiempo de balanceo: el precio se recupera con un intervalo de actualización determinada (por ejemplo, 30 s) y en comparación con el precio traído, un marco de tiempo hace (por ejemplo, hace 15 minutos).", 

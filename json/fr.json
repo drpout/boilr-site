@@ -20,7 +20,7 @@
     "errorGitHub": "Erreur: ne peut pas se connecter à GitHub",
     "exchanges": "Échanges",
     "featureImage0": "Boilr est une application Android qui surveille les prix Bitcoin, des cryptodevises, cryptoactif, contrats à terme et options puis déclenche les alarmes selon vos paramètres.",
-    "featureImage1": "Boilr prend en charge 70+ échanges et tous leurs paires.</br></br>Les données du marché sont extraites directement des échanges à l'aide de Wi-Fi ou données Mobile (si autorisé), avec <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\"> libdynticker</a>.",
+    "featureImage1": "Boilr prend en charge 90+ échanges et tous leurs paires.</br></br>Les données du marché sont extraites directement des échanges à l'aide de Wi-Fi ou données Mobile (si autorisé), avec <a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\"> libdynticker</a>.",
     "featureImage10": "C'est un thème léger alternatif.",
     "featureImage2": "<b>Prix Hit</b></br></br>Déclenché lorsque prix franchit la limite supérieure ou inférieure de l'alarme.",
     "featureImage3": "<b>Changement de prix</b></br></br>Déclenchable lorsque des changements de prix d'un montant de X  (en monnaie ou en pourcentage) dans un laps de temps spécifié (par exemple : 15 min). Il utilise un laps de temps tournant : Le prix est extrait avec un intervalle de mise à jour donnée (par exemple 30 Sec) et par rapport au prix récupéré en un laps de temps  (par exemple : il y a 15 min).",

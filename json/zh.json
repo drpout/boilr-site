@@ -10,7 +10,7 @@
     "donateOrTip": "捐赠",
     "language": "语言",
     "featureImage0": "Boilr 是一款免费、自由的 Android 应用，它可以监控实时比特币及其他数字货币和期货及期权的价格，并根据您的设置触发提醒。",
-    "featureImage1": "Boilr 已支持超过70家交易所及相应组合。</br></br>市场数据通过 Wi-Fi 或移动网络(如果用户允许)直接从交易所获取，使用<a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\">libdynticker</a>。",
+    "featureImage1": "Boilr 已支持超过90家交易所及相应组合。</br></br>市场数据通过 Wi-Fi 或移动网络(如果用户允许)直接从交易所获取，使用<a href=\"https://github.com/drpout/libdynticker/#supported-exchanges\" target=\"_blank\">libdynticker</a>。",
     "featureImage2": "<b>触价提醒</b></br></br>当价格越过设置好的上限或者下限时触发。",
     "featureImage3": "<b>波动提醒</b></br></br>当价格波动在某一时间段内(例如15分钟)超过一定程度时(绝对值或者百分比)触发。",
     "featureImage4": "提醒和闹钟一样，被触发时响铃，显示最新信息，直到您将其关闭。",
