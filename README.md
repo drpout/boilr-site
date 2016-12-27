@@ -16,7 +16,8 @@ Modified version of F-Droid logo and Monero, Dogecoin and Nextcoin icons by Andr
 
 Translators:	
 
-* Chinese: [Jan Xie](https://github.com/janx)
+* Chinese: [Jan Xie](https://github.com/janx) and [YFdyh000](https://hosted.weblate.org/user/yfdyh000)
 * Czech: [Jaroslav Lichtblau](https://github.com/svetlemodry) and [Michal Čihař](https://github.com/nijel)
-* French: [Tuux](http://www.rtnp.org)
+* French: [Tuux](http://www.rtnp.org) and [Adam Magnier](https://hosted.weblate.org/user/qsypoq)
 * Portuguese: [Thiago Casotti](https://hosted.weblate.org/user/tcasotti)
+* Spanish: [Luis Garcia](https://hosted.weblate.org/user/luigars) and [Franco](https://hosted.weblate.org/user/franco999)
