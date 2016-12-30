@@ -874,10 +874,6 @@
 			var video_wrap = $('#video-wrap');
 			video_wrap.empty().append(videoTemplate(i18nStrings));
 
-			// var overlayTemplate = $('#overlay-template').html();
-			// overlayTemplate = Handlebars.compile(overlayTemplate);
-			// $('#video-wrap').append(overlayTemplate(i18nStrings));
-			
 			var navTemplate = $("#nav-template").html();
 			navTemplate = Handlebars.compile(navTemplate);
 			$('#navbar').empty().append(navTemplate(i18nStrings));
