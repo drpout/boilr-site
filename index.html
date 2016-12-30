@@ -117,7 +117,7 @@
 </script>
 
 <script id="video-template" type="text/x-handlebars-template">
-	<video id="video_background" class="video_background" preload="metadata" loop="loop" muted>
+	<video id="video_background" class="video_background" preload="auto" autoplay="autoplay" loop="loop" muted>
 		<source src="video/preview.webm" type="video/webm">
 		<source src="video/preview.ogg" type="video/ogg">
 		<source src="video/preview.mp4" type="video/mp4">
@@ -870,14 +870,9 @@
 			
 			var videoTemplate = $('#video-template').html();
 			videoTemplate = Handlebars.compile(videoTemplate);
-			$('#video-wrap').empty().append(videoTemplate(i18nStrings));
 			
-			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-				// $('#video-wrap').empty().append("<img id=\"video_background\" src=\"img/screenshots/alarm-list.png\">");
-			}else{
-				$('#video_background').attr('autoplay','autoplay');
-				$('#video_background').attr('preload','auto');
-			}
+			var video_wrap = $('#video-wrap');
+			video_wrap.empty().append(videoTemplate(i18nStrings));
 
 			// var overlayTemplate = $('#overlay-template').html();
 			// overlayTemplate = Handlebars.compile(overlayTemplate);
